@@ -13,7 +13,7 @@ async function addWineToDB(wineData) {
     try {
         // General data tables
         const producerId = await utilitiesModel.getRowIdFromKey('producers', 'name', wineData.producer_name, 'producer_id');
-        const regionId = await regionsModel.addWineRegionsArrayToDB(wineData.region_array);
+        const regionId = await regionsModel.insertRegionArray(wineData.region_array);
         const colorId = await utilitiesModel.getRowIdFromKey('colors', 'name', wineData.color_name, 'color_id');
         const purchaseCategoryId = await utilitiesModel.getRowIdFromKey('purchase_categories', 'name', wineData.purchase_category_name, 'purchase_category_id');
 
@@ -57,27 +57,35 @@ async function getWineFull(VmpId) {
     }
 }
 
-
-// Name
-// Type
-// Full Region
-// Producer
-// Price
-async function getWineBasic(VmpId) {
+async function getWineBasic(vmpId) {
     try {
-        const wineBasic = {
-            wineId: 0,
-            vmpId: 0,
-            name: '',
-            region_array: [],
-            producer: '',
-            price: 0.0
-        }
+        const wineQuery = `
+            SELECT w.wine_id, w.vmp_id, w.name, w.price_kr, w.wine_type, p.name AS producer, w.region_id
+            FROM wines AS w
+            JOIN producers AS p ON w.producer_id = p.producer_id
+            WHERE w.vmp_id = $1
+        `;
 
-        
+        const wineRes = await db.query(wineQuery, [vmpId]);
+        if (wineRes.rows.length === 0) return null;
 
+        const wine = wineRes.rows[0];
+
+        const regionArray = await regionsModel.getFullRegionPath(wine.region_id);
+        const fullRegion = regionArray.join(', ')
+
+        return {
+            wineId: wine.wine_id,
+            vmpId: wine.vmp_id,
+            name: wine.name,
+            type: wine.wine_type,
+            fullRegion,
+            producer: wine.producer,
+            price: parseFloat(wine.price_kr),
+            imagePath: wine.image_path
+        };
     } catch (err) {
-        console.error(err.stack);
+        console.error('Error getting basic wine info:', err.stack);
     }
 }
 
