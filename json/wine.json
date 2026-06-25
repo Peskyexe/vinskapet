@@ -1,0 +1,90 @@
+{
+    "vmp_id": 102301,
+    "name": "Freemark Abbey Napa Valley Cabernet Sauvignon 2019",
+    "vintage_year": 2019,
+    "wine_type": "Rødvin",
+    "producer_name": "Freemark Abbey Winery",
+    "region_array": [
+        "USA",
+        "California",
+        "Napa Valley"
+    ],
+    "color_name": "Dyp rød",
+    "volume_cl": 75,
+    "price_kr": 998,
+    "purchase_category_name": "Bestillingsutvalget",
+    "wine_descriptions_object": {
+        "aroma_text": "Mørke bær og frukter, lakris, plommer og florale toner.",
+        "taste_text": "Myke tanniner, fyldig, fruktdreven."
+    },
+    "wine_foodtypes_array": [
+        "Storfe",
+        "Lam og sau",
+        "Småvilt"
+    ],
+    "wine_properties_array": [
+        {
+            "name": "Fylde",
+            "value": 9
+        },
+        {
+            "name": "Friskhet",
+            "value": 8
+        },
+        {
+            "name": "Garvestoffer",
+            "value": 6
+        }
+    ],
+    "wine_grapes_array": [
+        {
+            "name": "Cabernet Sauvignon",
+            "percentage": 90
+        },
+        {
+            "name": "Cabernet Franc",
+            "percentage": 1
+        },
+        {
+            "name": "Petit Verdot",
+            "percentage": 2
+        },
+        {
+            "name": "Malbec",
+            "percentage": 2
+        },
+        {
+            "name": "Merlot",
+            "percentage": 5
+        }
+    ],
+    "wine_contents_array": [
+        {
+            "name": "Alkohol",
+            "amount": 14.5,
+            "unit": "%",
+            "less_than": false
+        },
+        {
+            "name": "Sukker",
+            "amount": 3,
+            "unit": "g/l",
+            "less_than": true
+        },
+        {
+            "name": "Syre",
+            "amount": 6.3,
+            "unit": "g/l",
+            "less_than": false
+        }
+    ],
+    "wine_aromas_array": [
+        "mørke_bær",
+        "frukt",
+        "floral"
+    ],
+    "wine_tastes_array": [
+        "fyldig",
+        "fruktig"
+    ]
+}

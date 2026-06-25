@@ -1,0 +1,5649 @@
+[
+    {
+        "vmp_id": 9929801,
+        "name": "Ressia Barbera d'Alba Superiore 2021",
+        "vintage_year": 2021,
+        "wine_type": "Rødvin",
+        "producer_name": "Az. Agr. Ressia",
+        "region_array": [
+            "Italia",
+            "Piemonte",
+            "Barbera d'Alba"
+        ],
+        "color_name": "Rubinrød",
+        "volume_cl": 75,
+        "price_kr": 310,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av bjørnebær, koriander, rosenblad og krydder.",
+            "taste_text": "Syre og balanse. Lang ettersmak med tanniner."
+        },
+        "wine_foodtypes_array": [
+            "Lam og sau",
+            "Småvilt",
+            "Storvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 4
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Barbera",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 6.6,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "mørke_bær",
+            "krydder",
+            "floral"
+        ],
+        "wine_tastes_array": [
+            "balansert",
+            "lang"
+        ]
+    },
+    {
+        "vmp_id": 9190901,
+        "name": "Altanza Rosado 2024",
+        "vintage_year": 2024,
+        "wine_type": "Rosévin",
+        "producer_name": "Bod. Altanza",
+        "region_array": [
+            "Spania",
+            "Rioja"
+        ],
+        "color_name": "Lys rød",
+        "volume_cl": 75,
+        "price_kr": 250,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Rips, kirsebær og jordbær med hint av banantoner.",
+            "taste_text": "Friskt anslag av syrlige kirsebær. Konsentrert og balansert med smak av jordbær og sitrus."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Fisk",
+            "Lyst kjøtt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 7
+            },
+            {
+                "name": "Friskhet",
+                "value": 6
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Tempranillo",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 4.5,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær"
+        ],
+        "wine_tastes_array": [
+            "røde_bær",
+            "balansert",
+            "frisk",
+            "sitrus",
+            "konsentrert"
+        ]
+    },
+    {
+        "vmp_id": 897401,
+        "name": "Ch. Fuissé Tête de Cuvé Pouilly-Fuissé 2023",
+        "vintage_year": 2023,
+        "wine_type": "Hvitvin",
+        "producer_name": "Ch. Fuissé",
+        "region_array": [
+            "Frankrike",
+            "Burgund",
+            "Pouilly-Fuissé"
+        ],
+        "color_name": "Lys grønngul",
+        "volume_cl": 75,
+        "price_kr": 439.9,
+        "purchase_category_name": "Testutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Nyansert og litt utviklet aroma av eple, fersken, kjeks og honning, litt nøtt, smør og fatkrydder.",
+            "taste_text": "Fyldig og mineralsk med litt utviklet preg av gul steinfrukt, modent eple, lime, nøtt, smør og fat."
+        },
+        "wine_foodtypes_array": [
+            "Fisk",
+            "Lyst kjøtt",
+            "Svin"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 9
+            },
+            {
+                "name": "Friskhet",
+                "value": 9
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Chardonnay",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 4.8,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "eple",
+            "krydder",
+            "fersk"
+        ],
+        "wine_tastes_array": [
+            "fyldig",
+            "mineralsk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 8352101,
+        "name": "Weltner Rödelseer Schwanleite Sylvaner Trocken Alte Reben 2024",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Wein. Weltner",
+        "region_array": [
+            "Tyskland",
+            "Franken",
+            "Rödelsee"
+        ],
+        "color_name": "Middels dyp strågul",
+        "volume_cl": 75,
+        "price_kr": 419.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Floral duft med tydelig mineralitet, friske epler og noe urter.",
+            "taste_text": "Mineralsk stil, noe blomster og sitrus."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Skalldyr",
+            "Fisk"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Sylvaner",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 12,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.7,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "eple",
+            "floral",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "sitrus",
+            "mineralsk",
+            "floralsk"
+        ]
+    },
+    {
+        "vmp_id": 8352001,
+        "name": "Weltner Gipskeuper Sylvaner Trocken 2024",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Wein. Weltner",
+        "region_array": [
+            "Tyskland",
+            "Franken",
+            "Rödelsee"
+        ],
+        "color_name": "Lys strågul, grønnskjær",
+        "volume_cl": 75,
+        "price_kr": 269.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Middels aromatisk, mineralsk duft med gule epler, sitrus og balsam.",
+            "taste_text": "Mineralsk, eplepreget og sitrus."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Skalldyr",
+            "Fisk"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 7
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Sylvaner",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 12.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3.8,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 5.9,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "eple",
+            "krydder",
+            "sitrus",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "sitrus",
+            "mineralsk"
+        ]
+    },
+    {
+        "vmp_id": 83301,
+        "name": "Viña Sol",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Miguel Torres",
+        "region_array": [
+            "Spania",
+            "Catalonia"
+        ],
+        "color_name": "Lys grønngul",
+        "volume_cl": 75,
+        "price_kr": 129.9,
+        "purchase_category_name": "Testutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Ungdommelig aroma av gult eple og pære, litt grønne urter, nøtt, flint og blomst.",
+            "taste_text": "Ung og eplepreget med god friskhet, innslag av pære og steinfrukt, litt nøtt og grønne urter."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Fisk",
+            "Grønnsaker"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 5
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Parellada",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 12,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 4.6,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "eple"
+        ],
+        "wine_tastes_array": [
+            "frisk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 8189201,
+        "name": "Les Hauts de Beauséjour 2001",
+        "vintage_year": 2001,
+        "wine_type": "Rødvin",
+        "producer_name": "Ch. Beauséjour",
+        "region_array": [
+            "Frankrike",
+            "Bordeaux",
+            "Puisseguin-St. Emilion"
+        ],
+        "color_name": "Rødbrun",
+        "volume_cl": 75,
+        "price_kr": 304.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Bjørnebær, tørket frukt, svisker, lær, tobakk, stall og skogbunn.",
+            "taste_text": "Mørke bær, hint av mynte, mørk sjokolade, myke tanniner og god lengde."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Lam og sau",
+            "Småvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 10
+            },
+            {
+                "name": "Friskhet",
+                "value": 7
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 7
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Merlot",
+                "percentage": 70
+            },
+            {
+                "name": "Cabernet Franc",
+                "percentage": 30
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 3.5,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "mørke_bær",
+            "frukt"
+        ],
+        "wine_tastes_array": [
+            "mørke_bær",
+            "lang"
+        ]
+    },
+    {
+        "vmp_id": 8187801,
+        "name": "Ressia Gepù Langhe Nebbiolo 2021",
+        "vintage_year": 2021,
+        "wine_type": "Rødvin",
+        "producer_name": "Az. Agr. Ressia",
+        "region_array": [
+            "Italia",
+            "Piemonte",
+            "Langhe"
+        ],
+        "color_name": "Granatrød",
+        "volume_cl": 75,
+        "price_kr": 349.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Fersk med krydret aroma, alkohol, frukt og mineraler.",
+            "taste_text": "Rund, full og rik, tanniner, forsiktig syre."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Storvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 4
+            },
+            {
+                "name": "Friskhet",
+                "value": 10
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 9
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Nebbiolo",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 6,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "frukt",
+            "krydder",
+            "fersk",
+            "mineral"
+        ],
+        "wine_tastes_array": []
+    },
+    {
+        "vmp_id": 7938501,
+        "name": "Quinta do Noval Colheita 1997",
+        "vintage_year": 1997,
+        "wine_type": "Sterkvin - Portvin",
+        "producer_name": "Quinta do Noval",
+        "region_array": [
+            "Portugal",
+            "Douro e Porto"
+        ],
+        "color_name": "Kobber",
+        "volume_cl": 75,
+        "price_kr": 1,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Utviklet og krydret duft.",
+            "taste_text": "Søt med syre, krydret fruktighet og lang avslutning."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Ost",
+            "Dessert"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 7
+            },
+            {
+                "name": "Sødme",
+                "value": 7
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Touriga Nacional",
+                "percentage": 50
+            },
+            {
+                "name": "Touriga Franca",
+                "percentage": 20
+            },
+            {
+                "name": "Tinto C",
+                "percentage": 15
+            },
+            {
+                "name": "Tinta Roriz",
+                "percentage": 15
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 22,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 120,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 5.8,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "krydder"
+        ],
+        "wine_tastes_array": [
+            "lang",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 7897707,
+        "name": "Franco Conterno Bussia Riserva 5l 2011",
+        "vintage_year": 2011,
+        "wine_type": "Rødvin",
+        "producer_name": "Franco Conterno",
+        "region_array": [
+            "Italia",
+            "Piemonte",
+            "Barolo"
+        ],
+        "color_name": "Rød",
+        "volume_cl": 500,
+        "price_kr": 9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av røde og mørke bær, fioler, urter krydder og fat.",
+            "taste_text": "Frukt, konsentrasjon og god lengde."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Lam og sau",
+            "Storvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 10
+            },
+            {
+                "name": "Friskhet",
+                "value": 7
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 8
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Nebbiolo",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 6.1,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær",
+            "mørke_bær",
+            "krydder",
+            "floral"
+        ],
+        "wine_tastes_array": [
+            "lang",
+            "konsentrert",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 7897507,
+        "name": "Franco Conterno Cascina Sciulun Langhe Nebbiolo 9 l 2019",
+        "vintage_year": 2019,
+        "wine_type": "Rødvin",
+        "producer_name": "Franco Conterno",
+        "region_array": [
+            "Italia",
+            "Piemonte",
+            "Langhe"
+        ],
+        "color_name": "Rød",
+        "volume_cl": 900,
+        "price_kr": 7,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Røde bær og frukter, fioler, lær og urter.",
+            "taste_text": "Frukt, konsentrasjon og lengde."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Lam og sau",
+            "Småvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 9
+            },
+            {
+                "name": "Friskhet",
+                "value": 7
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 8
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Nebbiolo",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.2,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær",
+            "frukt",
+            "floral"
+        ],
+        "wine_tastes_array": [
+            "lang",
+            "konsentrert",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 7746001,
+        "name": "Ten. Chiccheri Valpolicella Superiore 2017",
+        "vintage_year": 2017,
+        "wine_type": "Rødvin",
+        "producer_name": "Ten. Chiccheri",
+        "region_array": [
+            "Italia",
+            "Veneto",
+            "Valpolicella"
+        ],
+        "color_name": "Mørk rubinrød",
+        "volume_cl": 75,
+        "price_kr": 399.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av kirsebær, pepper, kanel og balsamico.",
+            "taste_text": "Tørr og balansert."
+        },
+        "wine_foodtypes_array": [
+            "Lam og sau",
+            "Småvilt",
+            "Storvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 9
+            },
+            {
+                "name": "Friskhet",
+                "value": 5
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 6
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Rondinella",
+                "percentage": 30
+            },
+            {
+                "name": "Corvinone",
+                "percentage": 30
+            },
+            {
+                "name": "Corvina",
+                "percentage": 40
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 6.4,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær",
+            "krydder"
+        ],
+        "wine_tastes_array": [
+            "balansert",
+            "tørr"
+        ]
+    },
+    {
+        "vmp_id": 7745901,
+        "name": "Ten. Chiccheri Valpolicella Ripasso Superiore 2020",
+        "vintage_year": 2020,
+        "wine_type": "Rødvin",
+        "producer_name": "Ten. Chiccheri",
+        "region_array": [
+            "Italia",
+            "Veneto",
+            "Valpolicella Ripasso"
+        ],
+        "color_name": "Rubinrød",
+        "volume_cl": 75,
+        "price_kr": 349.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av kirsebær.",
+            "taste_text": "Tørr og balansert."
+        },
+        "wine_foodtypes_array": [
+            "Lyst kjøtt",
+            "Småvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 6
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 6
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Corvinone",
+                "percentage": 10
+            },
+            {
+                "name": "Corvina",
+                "percentage": 50
+            },
+            {
+                "name": "Rondinella",
+                "percentage": 40
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3.5,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 6.5,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær"
+        ],
+        "wine_tastes_array": [
+            "balansert",
+            "tørr"
+        ]
+    },
+    {
+        "vmp_id": 7738501,
+        "name": "Merotto Cuvée del Fondatore Valdobbiadene Prosecco Superiore 2019",
+        "vintage_year": 2019,
+        "wine_type": "Musserende vin - Musserende vin",
+        "producer_name": "Casa Vin. Merotto",
+        "region_array": [
+            "Italia",
+            "Veneto",
+            "Conegliano Valdobbiadene Prosecco"
+        ],
+        "color_name": "Strågul, grønnskjær",
+        "volume_cl": 75,
+        "price_kr": 359.5,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Hvit frukt og sitrus med floral duft, noe mineraler.",
+            "taste_text": "Fersk og elegant med volum og balanse."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Skalldyr",
+            "Grønnsaker"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 9
+            },
+            {
+                "name": "Sødme",
+                "value": 2
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Glera",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 11.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 7,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 5.7,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "frukt",
+            "sitrus",
+            "floral",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "balansert"
+        ]
+    },
+    {
+        "vmp_id": 7737601,
+        "name": "Merotto Bareta Valdobbiadene Prosecco Superiore Brut 2018",
+        "vintage_year": 2018,
+        "wine_type": "Musserende vin - Musserende vin",
+        "producer_name": "Casa Vin. Merotto",
+        "region_array": [
+            "Italia",
+            "Veneto",
+            "Conegliano Valdobbiadene Prosecco"
+        ],
+        "color_name": "Strågul, grønnskjær",
+        "volume_cl": 75,
+        "price_kr": 269.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Blomster og gylne epler, fersken og frukt av sedertre.",
+            "taste_text": "Balansert med syre og tannin. Utholdende og aromatisk."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Fisk"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 7
+            },
+            {
+                "name": "Friskhet",
+                "value": 9
+            },
+            {
+                "name": "Sødme",
+                "value": 3
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Glera",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 11.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 8,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 5.7,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "frukt",
+            "eple",
+            "fersk"
+        ],
+        "wine_tastes_array": [
+            "balansert"
+        ]
+    },
+    {
+        "vmp_id": 7736901,
+        "name": "Olivero Mario Buschet Dolcetto d'Alba 2021",
+        "vintage_year": 2021,
+        "wine_type": "Rødvin",
+        "producer_name": "Olivero Mario",
+        "region_array": [
+            "Italia",
+            "Piemonte",
+            "Dolcetto d'Alba"
+        ],
+        "color_name": "Dyp rubinrød",
+        "volume_cl": 75,
+        "price_kr": 299.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Kirsebær, mandel, mykt blekk og tobakk.",
+            "taste_text": "Lang ettersmak gjennom tannin."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Svin"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 9
+            },
+            {
+                "name": "Friskhet",
+                "value": 6
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 9
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Dolcetto",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 6.2,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær"
+        ],
+        "wine_tastes_array": [
+            "lang"
+        ]
+    },
+    {
+        "vmp_id": 7736701,
+        "name": "Olivero Mario Langhe Nebbiolo 2021",
+        "vintage_year": 2021,
+        "wine_type": "Rødvin",
+        "producer_name": "Olivero Mario",
+        "region_array": [
+            "Italia",
+            "Piemonte",
+            "Langhe"
+        ],
+        "color_name": "Rubinrød",
+        "volume_cl": 75,
+        "price_kr": 329.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Kirsebær og fioler med overtoner av krydder.",
+            "taste_text": "Rød frukt og tanniner i avslutningen."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Storfe",
+            "Svin"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 9
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 8
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Nebbiolo",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.6,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær",
+            "krydder",
+            "floral"
+        ],
+        "wine_tastes_array": [
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 7736601,
+        "name": "Olivero Mario Langhe Arneis 2022",
+        "vintage_year": 2022,
+        "wine_type": "Hvitvin",
+        "producer_name": "Olivero Mario",
+        "region_array": [
+            "Italia",
+            "Piemonte",
+            "Langhe"
+        ],
+        "color_name": "Strågul, gyllenskjær",
+        "volume_cl": 75,
+        "price_kr": 289.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av pære, gul fersken, honning, mandler og safran.",
+            "taste_text": "Rik, fruktig og frisk med hint av mineraler, lang ettersmak."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Skalldyr",
+            "Fisk"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 9
+            },
+            {
+                "name": "Friskhet",
+                "value": 3
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Arneis",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.6,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "fersk"
+        ],
+        "wine_tastes_array": [
+            "frisk",
+            "lang",
+            "mineralsk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 7732801,
+        "name": "Dom. de Sulauze Super Modeste Pet Nat 2025",
+        "vintage_year": 2025,
+        "wine_type": "Perlende vin - Perlende vin, hvit",
+        "producer_name": "Dom. de Sulauze",
+        "region_array": [
+            "Frankrike"
+        ],
+        "color_name": "Middels dyp strågul",
+        "volume_cl": 75,
+        "price_kr": 279.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av sitrus og urter, litt eple og nøtt.",
+            "taste_text": "Ung og eplepreget, frisk og fruktpreget."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Svin",
+            "Grønnsaker"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 4
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Ugni Blanc",
+                "percentage": 50
+            },
+            {
+                "name": "Vermentino",
+                "percentage": 50
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 11.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 5,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 6.2,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "eple",
+            "sitrus"
+        ],
+        "wine_tastes_array": [
+            "frisk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 7728001,
+        "name": "Olivero Mario Barbera d'Alba 2021",
+        "vintage_year": 2021,
+        "wine_type": "Rødvin",
+        "producer_name": "Olivero Mario",
+        "region_array": [
+            "Italia",
+            "Piemonte",
+            "Barbera d'Alba"
+        ],
+        "color_name": "Dyp rubinrød",
+        "volume_cl": 75,
+        "price_kr": 299.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Bjørnebær med hint av krydder.",
+            "taste_text": "Rik og elegant med hint av fruktkjøtt. Syrlig med en varig avslutning."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Lyst kjøtt",
+            "Svin"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 9
+            },
+            {
+                "name": "Friskhet",
+                "value": 9
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 6
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Barbera",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 15,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 6.2,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "mørke_bær",
+            "krydder"
+        ],
+        "wine_tastes_array": [
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 7673601,
+        "name": "Dom. de la Butte Bourgueil Perrières 2017",
+        "vintage_year": 2017,
+        "wine_type": "Rødvin",
+        "producer_name": "Dom. de la Butte",
+        "region_array": [
+            "Frankrike",
+            "Loire",
+            "Bourgueil"
+        ],
+        "color_name": "Dyp rød",
+        "volume_cl": 75,
+        "price_kr": 449.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av mørke bær, mineraler, urter og balsam.",
+            "taste_text": "Ren og presis aroma av mørke bær, urt, krydder over fat og tanniner i lang slutt."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Lam og sau",
+            "Småvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 9
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 8
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "",
+                "percentage": 40
+            },
+            {
+                "name": "Cabernet Franc",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 4.9,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "mørke_bær",
+            "krydder",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "mørke_bær",
+            "lang"
+        ]
+    },
+    {
+        "vmp_id": 7673101,
+        "name": "Lambert Chinon Les Perruches 2023",
+        "vintage_year": 2023,
+        "wine_type": "Rødvin",
+        "producer_name": "Béatrice & Pascal Lambert",
+        "region_array": [
+            "Frankrike",
+            "Loire",
+            "Chinon"
+        ],
+        "color_name": "Dyp blårød",
+        "volume_cl": 75,
+        "price_kr": 299.7,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Fruktig og litt krydret, preg av krekling, solbær, paprika og blyant, litt fat, skogbunn og fiol.",
+            "taste_text": "Ung, saftig og fast, preg av mørke bær, paprika og blyant, litt krekling, grønne urter og fat."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Lam og sau",
+            "Småvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 9
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 8
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Cabernet Franc",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 4.2,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "mørke_bær",
+            "frukt",
+            "krydder"
+        ],
+        "wine_tastes_array": [
+            "mørke_bær"
+        ]
+    },
+    {
+        "vmp_id": 7353001,
+        "name": "Hirsch Raschen Ridge Pinot Noir 2023",
+        "vintage_year": 2023,
+        "wine_type": "Rødvin",
+        "producer_name": "Hirsch Vineyards",
+        "region_array": [
+            "USA",
+            "California",
+            "Sonoma Coast"
+        ],
+        "color_name": "Dyp rød",
+        "volume_cl": 75,
+        "price_kr": 1,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Kirsebær og plommer, skogsbær.",
+            "taste_text": "Rund og rik."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Småvilt",
+            "Storvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 7
+            },
+            {
+                "name": "Friskhet",
+                "value": 7
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 6
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Pinot Noir",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 6.2,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær"
+        ],
+        "wine_tastes_array": []
+    },
+    {
+        "vmp_id": 7329601,
+        "name": "La Selva Rosato Toscano 2025",
+        "vintage_year": 2025,
+        "wine_type": "Rosévin",
+        "producer_name": "La Selva",
+        "region_array": [
+            "Italia",
+            "Toscana"
+        ],
+        "color_name": "Rosa",
+        "volume_cl": 75,
+        "price_kr": 248.8,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Fruktig med røde bærtoner.",
+            "taste_text": "Frisk med fruktighet."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Fisk",
+            "Grønnsaker"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 4
+            },
+            {
+                "name": "Friskhet",
+                "value": 3
+            },
+            {
+                "name": "Sødme",
+                "value": 2
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Ciliegiolo",
+                "percentage": 30
+            },
+            {
+                "name": "Sangiovese",
+                "percentage": 70
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.4,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær",
+            "frukt"
+        ],
+        "wine_tastes_array": [
+            "frisk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 6839901,
+        "name": "Gironda Le Nicchie Nizza 2022",
+        "vintage_year": 2022,
+        "wine_type": "Rødvin",
+        "producer_name": "La Gironda",
+        "region_array": [
+            "Italia",
+            "Piemonte",
+            "Barbera d'Asti"
+        ],
+        "color_name": "Dyp rød",
+        "volume_cl": 75,
+        "price_kr": 455,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av mørke bær og stenfrukt, hint lær.",
+            "taste_text": "Konsentrert frukt, mørke bær, modne tanniner og lang fast ettersmak."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Lam og sau",
+            "Småvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 7
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 7
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Barbera",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 15.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.5,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "mørke_bær",
+            "frukt"
+        ],
+        "wine_tastes_array": [
+            "mørke_bær",
+            "lang",
+            "konsentrert",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 6558101,
+        "name": "Dr. Konstantin Frank Dry Riesling 2024",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Konstantin Frank",
+        "region_array": [
+            "USA",
+            "New York",
+            "Finger Lakes"
+        ],
+        "color_name": "Lys gul",
+        "volume_cl": 75,
+        "price_kr": 322.5,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av fersk lime, steinfrukt og moden melon. Innslag av hvite blomster og sitrusskall.",
+            "taste_text": "Sitrus, steinfrukt, mineralsk, tydelig syre, tekstur, lang lengde."
+        },
+        "wine_foodtypes_array": [
+            "Skalldyr",
+            "Fisk",
+            "Grønnsaker"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 3
+            },
+            {
+                "name": "Friskhet",
+                "value": 10
+            },
+            {
+                "name": "Sødme",
+                "value": 3
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Riesling",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 12,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 8,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 8.1,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "frukt",
+            "sitrus",
+            "fersk"
+        ],
+        "wine_tastes_array": [
+            "sitrus",
+            "lang",
+            "mineralsk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 655401,
+        "name": "Claude Riffault Sancerre Les Denisottes",
+        "vintage_year": 2023,
+        "wine_type": "Hvitvin",
+        "producer_name": "Dom. Claude Riffault",
+        "region_array": [
+            "Frankrike",
+            "Loire",
+            "Sancerre"
+        ],
+        "color_name": "Lys grønn",
+        "volume_cl": 75,
+        "price_kr": 599.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Stikkelsbær, solbær og mineraltoner.",
+            "taste_text": "Konsentrert og smaksrik i anslag, fruktig stil med mineraltoner."
+        },
+        "wine_foodtypes_array": [
+            "Skalldyr",
+            "Fisk",
+            "Ost"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 10
+            },
+            {
+                "name": "Friskhet",
+                "value": 10
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Sauvignon Blanc",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.8,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "mørke_bær",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "konsentrert",
+            "mineralsk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 6221601,
+        "name": "Caparzo Brunello di Montalcino Vigna La Casa 2021",
+        "vintage_year": 2021,
+        "wine_type": "Rødvin",
+        "producer_name": "Caparzo",
+        "region_array": [
+            "Italia",
+            "Toscana",
+            "Brunello di Montalcino"
+        ],
+        "color_name": "Dyp rød, brunskjær",
+        "volume_cl": 75,
+        "price_kr": 799.6,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Sval og tydelig aroma av modne bær, litt fat og tørket urt, innslag av lakris, kamfer og blomst.",
+            "taste_text": "Fast og ungdommelig, røde og mørke bær, te, fat, lakris og urter. God lengde."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Lam og sau",
+            "Småvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 9
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 9
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Brunello",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [],
+        "wine_tastes_array": [
+            "røde_bær",
+            "mørke_bær",
+            "lang"
+        ]
+    },
+    {
+        "vmp_id": 582401,
+        "name": "Eric Texier Adèle 2024",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Eric Texier",
+        "region_array": [
+            "Frankrike"
+        ],
+        "color_name": "Lys strågul, grønnskjær",
+        "volume_cl": 75,
+        "price_kr": 309.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Sitrus, blomster og friske urter.",
+            "taste_text": "Frisk med tekstur og struktur. Lang ettersmak."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Skalldyr",
+            "Fisk"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Clairette",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 12.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 4.9,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "sitrus"
+        ],
+        "wine_tastes_array": [
+            "frisk",
+            "lang"
+        ]
+    },
+    {
+        "vmp_id": 5763601,
+        "name": "Claude Riffault Sancerre Les Chasseignes",
+        "vintage_year": 2023,
+        "wine_type": "Hvitvin",
+        "producer_name": "Dom. Claude Riffault",
+        "region_array": [
+            "Frankrike",
+            "Loire",
+            "Sancerre"
+        ],
+        "color_name": "Lys gulgrønn",
+        "volume_cl": 75,
+        "price_kr": 569.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Stikkelsbær, solbærblader, sitrus og mineralkarakter.",
+            "taste_text": "Frisk syre, balansert frukt med lang ettersmak."
+        },
+        "wine_foodtypes_array": [
+            "Skalldyr",
+            "Fisk",
+            "Ost"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 10
+            },
+            {
+                "name": "Friskhet",
+                "value": 10
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Sauvignon Blanc",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.6,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "mørke_bær",
+            "sitrus",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "balansert",
+            "frisk",
+            "lang",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 5739901,
+        "name": "Quintarelli Alzero Cabernet 2015",
+        "vintage_year": 2015,
+        "wine_type": "Rødvin",
+        "producer_name": "Quintarelli",
+        "region_array": [
+            "Italia",
+            "Veneto"
+        ],
+        "color_name": "Dyp rød",
+        "volume_cl": 75,
+        "price_kr": 4,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av tørket mørk frukt og pepper.",
+            "taste_text": "Fyldig og tanninrik. Modne mørke bær, pepper og eksotiske krydder."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Småvilt",
+            "Storvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 10
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 7
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Merlot",
+                "percentage": 20
+            },
+            {
+                "name": "Cabernet Sauvignon",
+                "percentage": 40
+            },
+            {
+                "name": "Cabernet Franc",
+                "percentage": 40
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 16.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 7,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 6.1,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "frukt"
+        ],
+        "wine_tastes_array": [
+            "mørke_bær",
+            "fyldig"
+        ]
+    },
+    {
+        "vmp_id": 5724801,
+        "name": "Nik Weis St. Urbans-Hof Bockstein Kabinett 2024",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Weing. St. Urbans-Hof",
+        "region_array": [
+            "Tyskland",
+            "Mosel",
+            "Ockfen"
+        ],
+        "color_name": "Lys gul, grønnskjær",
+        "volume_cl": 75,
+        "price_kr": 379,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av eple, lime, blomster, skifer, røyk og hvit steinfrukt.",
+            "taste_text": "Sødmefull og frisk frukt. Lang, mineralsk og syrlig avslutning."
+        },
+        "wine_foodtypes_array": [
+            "Skalldyr",
+            "Fisk",
+            "Svin"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 9
+            },
+            {
+                "name": "Friskhet",
+                "value": 10
+            },
+            {
+                "name": "Sødme",
+                "value": 8
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Riesling",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 7.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 46,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 8.9,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "frukt",
+            "eple"
+        ],
+        "wine_tastes_array": [
+            "frisk",
+            "lang",
+            "mineralsk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 553801,
+        "name": "Eric Texier Brézème Roussanne 2024",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Eric Texier",
+        "region_array": [
+            "Frankrike",
+            "Rhône",
+            "Côtes du Rhône"
+        ],
+        "color_name": "Lys strågul, grønnskjær",
+        "volume_cl": 75,
+        "price_kr": 439.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Sitrus, blomster, urter og mineraler.",
+            "taste_text": "Frisk og fruktig. Lang."
+        },
+        "wine_foodtypes_array": [
+            "Skalldyr",
+            "Fisk",
+            "Lyst kjøtt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 7
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Roussanne",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 4.2,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "sitrus",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "frisk",
+            "lang",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 5472406,
+        "name": "Cant. di Ora Amicale Veneto Rosso 2021",
+        "vintage_year": 2021,
+        "wine_type": "Rødvin",
+        "producer_name": "Cant. di Ora",
+        "region_array": [
+            "Italia",
+            "Veneto"
+        ],
+        "color_name": "Dyp rød med blåskjær",
+        "volume_cl": 300,
+        "price_kr": 559.9,
+        "purchase_category_name": "Testutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av mørke bær, tørket frukt, litt fat, vanilje, skogbunn, lakris og kamfer.",
+            "taste_text": "Fyldig med litt sødme, preg av modne mørke bær, litt rosin, krydder, lakris, vanilje og fat."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Lam og sau",
+            "Svin"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 9
+            },
+            {
+                "name": "Friskhet",
+                "value": 7
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 8
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Corvina",
+                "percentage": 80
+            },
+            {
+                "name": "Molinara",
+                "percentage": 5
+            },
+            {
+                "name": "Rondinella",
+                "percentage": 15
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 11.9,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 5.6,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "mørke_bær",
+            "frukt"
+        ],
+        "wine_tastes_array": [
+            "mørke_bær",
+            "fyldig"
+        ]
+    },
+    {
+        "vmp_id": 5364601,
+        "name": "Lokoya Spring Mountain Cabernet Sauvignon 2011",
+        "vintage_year": 2011,
+        "wine_type": "Rødvin",
+        "producer_name": "Lokoya Winery",
+        "region_array": [
+            "USA",
+            "California",
+            "Spring Mountain District"
+        ],
+        "color_name": "Dyp rød",
+        "volume_cl": 75,
+        "price_kr": 4,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av mørk frukt, toner av blomst, urt, krydder og fat.",
+            "taste_text": "Fyldig med høy konsentrasjon og lang lengde."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Lam og sau",
+            "Småvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 10
+            },
+            {
+                "name": "Friskhet",
+                "value": 7
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 8
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Cabernet Sauvignon",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.4,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "frukt",
+            "krydder"
+        ],
+        "wine_tastes_array": [
+            "fyldig",
+            "lang",
+            "konsentrert"
+        ]
+    },
+    {
+        "vmp_id": 5356901,
+        "name": "Vérité La Muse 2011",
+        "vintage_year": 2011,
+        "wine_type": "Rødvin",
+        "producer_name": "Verite",
+        "region_array": [
+            "USA",
+            "California",
+            "Sonoma County"
+        ],
+        "color_name": "Dyp rød",
+        "volume_cl": 75,
+        "price_kr": 4,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av røde og mørke bær, blomster, krydder, lær og tobakk.",
+            "taste_text": "Høy konsentrasjon og lang lengde."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Lam og sau",
+            "Småvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 10
+            },
+            {
+                "name": "Friskhet",
+                "value": 6
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 8
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Cabernet Franc",
+                "percentage": 4
+            },
+            {
+                "name": "Merlot",
+                "percentage": 89
+            },
+            {
+                "name": "Malbec",
+                "percentage": 7
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.6,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær",
+            "mørke_bær",
+            "krydder"
+        ],
+        "wine_tastes_array": [
+            "lang",
+            "konsentrert"
+        ]
+    },
+    {
+        "vmp_id": 5356801,
+        "name": "Vérité La Joie 2011",
+        "vintage_year": 2011,
+        "wine_type": "Rødvin",
+        "producer_name": "Verite",
+        "region_array": [
+            "USA",
+            "California",
+            "Sonoma County"
+        ],
+        "color_name": "Dyp rød",
+        "volume_cl": 75,
+        "price_kr": 4,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av røde og mørke bær, blomster, krydder, lær og tobakk.",
+            "taste_text": "Elegant og fyldig, høy konsentrasjon og lang lengde."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Lam og sau",
+            "Småvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 10
+            },
+            {
+                "name": "Friskhet",
+                "value": 7
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 8
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Merlot",
+                "percentage": 7
+            },
+            {
+                "name": "Petit Verdot",
+                "percentage": 6
+            },
+            {
+                "name": "Cabernet Sauvignon",
+                "percentage": 74
+            },
+            {
+                "name": "Cabernet Franc",
+                "percentage": 10
+            },
+            {
+                "name": "Malbec",
+                "percentage": 3
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.5,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær",
+            "mørke_bær",
+            "krydder"
+        ],
+        "wine_tastes_array": [
+            "fyldig",
+            "lang",
+            "konsentrert"
+        ]
+    },
+    {
+        "vmp_id": 5356701,
+        "name": "Vérité La Joie 2009",
+        "vintage_year": 2009,
+        "wine_type": "Rødvin",
+        "producer_name": "Verite",
+        "region_array": [
+            "USA",
+            "California",
+            "Sonoma County"
+        ],
+        "color_name": "Dyp rød",
+        "volume_cl": 75,
+        "price_kr": 4,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Røde og mørke bær, blomster, krydder, lær og tobakk.",
+            "taste_text": "Elegant og fyldig med høy konsentrasjon og lang lengde."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Lam og sau",
+            "Småvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 9
+            },
+            {
+                "name": "Friskhet",
+                "value": 7
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 7
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Malbec",
+                "percentage": 2
+            },
+            {
+                "name": "Cabernet Sauvignon",
+                "percentage": 78
+            },
+            {
+                "name": "Cabernet Franc",
+                "percentage": 9
+            },
+            {
+                "name": "Petit Verdot",
+                "percentage": 2
+            },
+            {
+                "name": "Merlot",
+                "percentage": 9
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.6,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær",
+            "mørke_bær",
+            "krydder"
+        ],
+        "wine_tastes_array": [
+            "fyldig",
+            "lang",
+            "konsentrert"
+        ]
+    },
+    {
+        "vmp_id": 5324801,
+        "name": "Cèdre Héritage 2023",
+        "vintage_year": 2023,
+        "wine_type": "Rødvin",
+        "producer_name": "Le Cèdre Diffusion",
+        "region_array": [
+            "Frankrike",
+            "Sørvest",
+            "Cahors"
+        ],
+        "color_name": "Dyp rød",
+        "volume_cl": 75,
+        "price_kr": 219.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Duft av mørke bær og anis.",
+            "taste_text": "Tørr med tydelig struktur, bærpreget fruktighet og noe mineralitet. God lengde."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Lam og sau",
+            "Svin"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 7
+            },
+            {
+                "name": "Friskhet",
+                "value": 7
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 7
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Malbec",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 12.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 4.7,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "mørke_bær"
+        ],
+        "wine_tastes_array": [
+            "tørr",
+            "lang",
+            "mineralsk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 5264201,
+        "name": "Terre di San Leonardo 2022",
+        "vintage_year": 2022,
+        "wine_type": "Rødvin",
+        "producer_name": "Ten. San Leonardo",
+        "region_array": [
+            "Italia",
+            "Dolomiti (Dolomiten)"
+        ],
+        "color_name": "Dyp rød",
+        "volume_cl": 75,
+        "price_kr": 279.9,
+        "purchase_category_name": "Testutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Fruktig og litt utviklet preg av modne røde bær og plommer, litt tørket frukt, paprika og skogbunn.",
+            "taste_text": "God fylde og fasthet, modent og litt utviklet preg av røde og mørke bær, paprika, kamfer og urt."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Lam og sau",
+            "Svin"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 8
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Cabernet Sauvignon",
+                "percentage": 50
+            },
+            {
+                "name": "Merlot",
+                "percentage": 40
+            },
+            {
+                "name": "Carm",
+                "percentage": 10
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.9,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær",
+            "frukt"
+        ],
+        "wine_tastes_array": [
+            "røde_bær",
+            "mørke_bær",
+            "fyldig"
+        ]
+    },
+    {
+        "vmp_id": 4687501,
+        "name": "Quinta do Noval Vintage 2023",
+        "vintage_year": 2023,
+        "wine_type": "Sterkvin - Portvin",
+        "producer_name": "Quinta do Noval",
+        "region_array": [
+            "Portugal"
+        ],
+        "color_name": "Blårød",
+        "volume_cl": 75,
+        "price_kr": 1,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Lett utviklet aroma, bærfrukt med florale toner.",
+            "taste_text": "Søt med konsentrasjon, stram struktur og ung fruktighet. Lang ettersmak."
+        },
+        "wine_foodtypes_array": [
+            "Ost",
+            "Dessert"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 10
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Sødme",
+                "value": 9
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Sous",
+                "percentage": 10
+            },
+            {
+                "name": "Tinto C",
+                "percentage": 20
+            },
+            {
+                "name": "Touriga Franca",
+                "percentage": 25
+            },
+            {
+                "name": "Touriga Nacional",
+                "percentage": 45
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 19.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 115,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 5.3,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "frukt",
+            "floral"
+        ],
+        "wine_tastes_array": [
+            "lang",
+            "konsentrert",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 3981201,
+        "name": "Pelassa Langhe Rosato 2025",
+        "vintage_year": 2025,
+        "wine_type": "Rosévin",
+        "producer_name": "Pelassa",
+        "region_array": [
+            "Italia",
+            "Piemonte",
+            "Langhe"
+        ],
+        "color_name": "Rosa",
+        "volume_cl": 75,
+        "price_kr": 179.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Frisk aroma av bringebær og jordbær. Toner av fiol.",
+            "taste_text": "Frisk med bærpreget. Strukturert med lang avslutning."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Skalldyr",
+            "Fisk"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 4
+            },
+            {
+                "name": "Friskhet",
+                "value": 10
+            },
+            {
+                "name": "Sødme",
+                "value": 2
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Nebbiolo",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.9,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær"
+        ],
+        "wine_tastes_array": [
+            "frisk",
+            "lang"
+        ]
+    },
+    {
+        "vmp_id": 3883801,
+        "name": "Molino Mistral Moscato d'Asti 2023",
+        "vintage_year": 2023,
+        "wine_type": "Musserende vin - Musserende vin",
+        "producer_name": "Molino S.S.A.",
+        "region_array": [
+            "Italia",
+            "Piemonte",
+            "Moscato d'Asti"
+        ],
+        "color_name": "Lys strågul",
+        "volume_cl": 75,
+        "price_kr": 199.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av fersken, sitrus og salvie, lett parfymert.",
+            "taste_text": "Søtlig og rund."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Ost",
+            "Dessert"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 4
+            },
+            {
+                "name": "Friskhet",
+                "value": 6
+            },
+            {
+                "name": "Sødme",
+                "value": 8
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Moscato",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 132,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 5,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "sitrus",
+            "fersk"
+        ],
+        "wine_tastes_array": []
+    },
+    {
+        "vmp_id": 3872301,
+        "name": "Ioppa San Grato 2025",
+        "vintage_year": 2025,
+        "wine_type": "Hvitvin",
+        "producer_name": "Ioppa",
+        "region_array": [
+            "Italia"
+        ],
+        "color_name": "Lys strågul, grønnskjær",
+        "volume_cl": 75,
+        "price_kr": 189.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Epler, melon, stikkelsbær, floral med hint av sitrus og mineraler.",
+            "taste_text": "Fruktdreven med frisk avslutning. Tørr."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Fisk",
+            "Svin"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 9
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Erbaluce",
+                "percentage": 60
+            },
+            {
+                "name": "Traminer",
+                "percentage": 10
+            },
+            {
+                "name": "Timorasso",
+                "percentage": 30
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 11.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 6.3,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "eple",
+            "sitrus",
+            "floral",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "tørr",
+            "frisk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 3463101,
+        "name": "La Selva Vermentino 2024",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "La Selva",
+        "region_array": [
+            "Italia",
+            "Toscana",
+            "Maremma"
+        ],
+        "color_name": "Gyllen, strågul",
+        "volume_cl": 75,
+        "price_kr": 265.2,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Fersken, blomster, grapefrukt og sitrus.",
+            "taste_text": "Gult eple, nektarin, grapefrukt og sitrus. Lang ettersmak."
+        },
+        "wine_foodtypes_array": [
+            "Skalldyr",
+            "Fisk",
+            "Lyst kjøtt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 7
+            },
+            {
+                "name": "Friskhet",
+                "value": 6
+            },
+            {
+                "name": "Sødme",
+                "value": 2
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Vermentino",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 4.8,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "frukt",
+            "sitrus",
+            "fersk"
+        ],
+        "wine_tastes_array": [
+            "sitrus",
+            "lang",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 295801,
+        "name": "Hirsch Pinot Noir Reserve 2023",
+        "vintage_year": 2023,
+        "wine_type": "Rødvin",
+        "producer_name": "Hirsch Vineyards",
+        "region_array": [
+            "USA",
+            "California",
+            "Sonoma Coast"
+        ],
+        "color_name": "Dyp rød",
+        "volume_cl": 75,
+        "price_kr": 1,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Rød frukt, fiol og bringebær.",
+            "taste_text": "Kirsebær, blomster og et mineralsk innslag."
+        },
+        "wine_foodtypes_array": [
+            "Lyst kjøtt",
+            "Storfe",
+            "Storvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 7
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 7
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Pinot Noir",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13.4,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.7,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær",
+            "frukt"
+        ],
+        "wine_tastes_array": [
+            "røde_bær",
+            "mineralsk",
+            "floralsk"
+        ]
+    },
+    {
+        "vmp_id": 282601,
+        "name": "Patrick Baudouin Savennières Bellevue 2022",
+        "vintage_year": 2022,
+        "wine_type": "Hvitvin",
+        "producer_name": "Patrick Baudouin",
+        "region_array": [
+            "Frankrike",
+            "Loire",
+            "Savennières"
+        ],
+        "color_name": "Gyllen",
+        "volume_cl": 75,
+        "price_kr": 589.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av lime, blomster og grapefrukt.",
+            "taste_text": "Mineralsk med kjølig og tørr frukt. Strukturert, lang avslutning."
+        },
+        "wine_foodtypes_array": [
+            "Skalldyr",
+            "Fisk",
+            "Lyst kjøtt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 9
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Chenin Blanc",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "frukt"
+        ],
+        "wine_tastes_array": [
+            "tørr",
+            "lang",
+            "mineralsk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 2229101,
+        "name": "Ch. Beauséjour 2018",
+        "vintage_year": 2018,
+        "wine_type": "Rødvin",
+        "producer_name": "Ch. Beauséjour",
+        "region_array": [
+            "Frankrike",
+            "Bordeaux",
+            "Puisseguin-St. Emilion"
+        ],
+        "color_name": "Dyp rød",
+        "volume_cl": 75,
+        "price_kr": 299.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Mørke bær, tobakk, krydder.",
+            "taste_text": "Strukturert, konsentrasjon og lengde."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Lam og sau",
+            "Storvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 7
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 7
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Merlot",
+                "percentage": 75
+            },
+            {
+                "name": "Cabernet Franc",
+                "percentage": 25
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 4.8,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "mørke_bær",
+            "krydder"
+        ],
+        "wine_tastes_array": [
+            "lang",
+            "konsentrert"
+        ]
+    },
+    {
+        "vmp_id": 2144601,
+        "name": "Patrick Baudouin Le Cornillard Anjou Blanc 2022",
+        "vintage_year": 2022,
+        "wine_type": "Hvitvin",
+        "producer_name": "Patrick Baudouin",
+        "region_array": [
+            "Frankrike",
+            "Loire",
+            "Anjou"
+        ],
+        "color_name": "Gyllen",
+        "volume_cl": 75,
+        "price_kr": 599.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Konsentrert moden frisk steinfrukt, honning, blomst og skifermineraler.",
+            "taste_text": "Fyldig mineralsk frukt mot eple, steinfrukt. Lang avslutning."
+        },
+        "wine_foodtypes_array": [
+            "Fisk",
+            "Lyst kjøtt",
+            "Ost"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 10
+            },
+            {
+                "name": "Friskhet",
+                "value": 9
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Chenin Blanc",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 6,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "frukt",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "fyldig",
+            "lang",
+            "mineralsk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 2144501,
+        "name": "Patrick Baudouin Les Gâts Anjou Blanc 2017",
+        "vintage_year": 2017,
+        "wine_type": "Hvitvin",
+        "producer_name": "Patrick Baudouin",
+        "region_array": [
+            "Frankrike",
+            "Loire",
+            "Anjou"
+        ],
+        "color_name": "Gyllen",
+        "volume_cl": 75,
+        "price_kr": 609.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av eple og steinfrukt, litt honning og urter. Mineralsk.",
+            "taste_text": "Frisk frukt med markant mineralitet og lang ettersmak."
+        },
+        "wine_foodtypes_array": [
+            "Fisk",
+            "Lyst kjøtt",
+            "Ost"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 10
+            },
+            {
+                "name": "Friskhet",
+                "value": 9
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Chenin Blanc",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 6,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "frukt",
+            "eple",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "frisk",
+            "lang",
+            "mineralsk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 20690801,
+        "name": "Odfjell Armador Sauvignon Blanc 2025",
+        "vintage_year": 2025,
+        "wine_type": "Hvitvin",
+        "producer_name": "Odfjell Vineyards",
+        "region_array": [
+            "Chile",
+            "Aconcagua",
+            "Valle de San Antonio"
+        ],
+        "color_name": "Lys gul",
+        "volume_cl": 75,
+        "price_kr": 166.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Intens aromatisk duft av sitrusfrukt, grapefrukt og sitron, og urter.",
+            "taste_text": "Fruktig og frisk på smak. Tropisk frukt, fersken og ananas, og sitron."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Skalldyr",
+            "Fisk"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 6
+            },
+            {
+                "name": "Friskhet",
+                "value": 11
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Sauvignon Blanc",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 4.6,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "frukt",
+            "sitrus"
+        ],
+        "wine_tastes_array": [
+            "frisk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 20613206,
+        "name": "Johan Uten Land Green Label Verdejo Premier",
+        "vintage_year": 2025,
+        "wine_type": "Hvitvin",
+        "producer_name": "Bod. Cerón",
+        "region_array": [
+            "Spania"
+        ],
+        "color_name": "Lys gulgrønn",
+        "volume_cl": 150,
+        "price_kr": 239.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Ung med fruktig preg av steinfrukt, eple, litt sitrus og nøtt, hint av mineraler.",
+            "taste_text": "Ung, frisk, preg av fersken, klar pærefrukt, mineraler, lang avslutning."
+        },
+        "wine_foodtypes_array": [
+            "Skalldyr",
+            "Fisk",
+            "Lyst kjøtt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 6
+            },
+            {
+                "name": "Friskhet",
+                "value": 9
+            },
+            {
+                "name": "Sødme",
+                "value": 2
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Verdejo",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 11,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.9,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "frukt",
+            "eple",
+            "sitrus",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "frisk",
+            "lang",
+            "mineralsk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 20613106,
+        "name": "Johan Uten Land Black Label Tempranillo Premier",
+        "vintage_year": 2025,
+        "wine_type": "Rødvin",
+        "producer_name": "Bod. Cerón",
+        "region_array": [
+            "Spania"
+        ],
+        "color_name": "Dyp rød, blåskjær",
+        "volume_cl": 150,
+        "price_kr": 239.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma med litt krydret preg av røde og mørke bær, lakris og urter, innslag av fat og vanilje.",
+            "taste_text": "Ung og fruktig, fylde og fasthet, modne mørke og røde bær, fat, krydder og urt."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Lam og sau",
+            "Svin"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 8
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Tempranillo",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 11,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.1,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær",
+            "mørke_bær",
+            "krydder"
+        ],
+        "wine_tastes_array": [
+            "røde_bær",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 20613006,
+        "name": "Johan Uten Land Rosé Pink Label Tempranillo Premier",
+        "vintage_year": 2025,
+        "wine_type": "Rosévin",
+        "producer_name": "Bod. Cerón",
+        "region_array": [
+            "Spania"
+        ],
+        "color_name": "Lys rosa",
+        "volume_cl": 150,
+        "price_kr": 239.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av jordbær, bringebær og kirsebær, hint av urter og blomster.",
+            "taste_text": "Strukturert, frisk og balansert. Lang ettersmak"
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Skalldyr",
+            "Fisk"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 7
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Sødme",
+                "value": 2
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Tempranillo",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 11,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.4,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær"
+        ],
+        "wine_tastes_array": [
+            "balansert",
+            "frisk",
+            "lang"
+        ]
+    },
+    {
+        "vmp_id": 20611001,
+        "name": "Pieropan Pinot Iskra 2024",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Pieropan",
+        "region_array": [
+            "Italia",
+            "Veneto",
+            "Soave"
+        ],
+        "color_name": "Lys gul",
+        "volume_cl": 75,
+        "price_kr": 269.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av fersk grønn og hvit frukt, noe mineraler og urter.",
+            "taste_text": "Middels fylde, fruktig og frisk. Lang ettersmak."
+        },
+        "wine_foodtypes_array": [
+            "Skalldyr",
+            "Fisk",
+            "Lyst kjøtt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 9
+            },
+            {
+                "name": "Sødme",
+                "value": 2
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Pinot Blanc",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 12.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.9,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "frukt",
+            "fersk",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "frisk",
+            "lang",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 20609706,
+        "name": "Halvor Bakke Hverdagsglede Chardonnay & Viognier 2025",
+        "vintage_year": 2025,
+        "wine_type": "Hvitvin",
+        "producer_name": "Provenceviner AS",
+        "region_array": [
+            "Frankrike",
+            "Pays d'Oc"
+        ],
+        "color_name": "Lys gul",
+        "volume_cl": 300,
+        "price_kr": 499.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Frisk, saftig sitrus, sprøtt eple og moden fersken, florale toner.",
+            "taste_text": "Frisk med sprø syre, saftig steinfrukt og ren, balansert avslutning."
+        },
+        "wine_foodtypes_array": [
+            "Skalldyr",
+            "Fisk",
+            "Lyst kjøtt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 6
+            },
+            {
+                "name": "Friskhet",
+                "value": 9
+            },
+            {
+                "name": "Sødme",
+                "value": 2
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Chardonnay",
+                "percentage": 70
+            },
+            {
+                "name": "Viognier",
+                "percentage": 30
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 12.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 6.3,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "eple",
+            "sitrus",
+            "fersk",
+            "floral"
+        ],
+        "wine_tastes_array": [
+            "balansert",
+            "frisk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 20609001,
+        "name": "Nerdrum Psyche",
+        "vintage_year": 2021,
+        "wine_type": "Musserende vin - Champagne, brut",
+        "producer_name": "Autreau-Lasnot Champagne",
+        "region_array": [
+            "Frankrike",
+            "Champagne"
+        ],
+        "color_name": "Lys gul",
+        "volume_cl": 75,
+        "price_kr": 599.3,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Floral duft, hint av brioche, grønne epler, sitrus, saltaktig aroma.",
+            "taste_text": "Frisk syre, bred munnfølelse, konsentrert, lang, salin avslutning."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Skalldyr",
+            "Fisk"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 7
+            },
+            {
+                "name": "Friskhet",
+                "value": 10
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Chardonnay",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 12.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 4.7,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "eple",
+            "sitrus",
+            "floral"
+        ],
+        "wine_tastes_array": [
+            "frisk",
+            "lang",
+            "konsentrert"
+        ]
+    },
+    {
+        "vmp_id": 20608301,
+        "name": "Villadoria Barolo 2022",
+        "vintage_year": 2022,
+        "wine_type": "Rødvin",
+        "producer_name": "Villadoria",
+        "region_array": [
+            "Italia",
+            "Piemonte",
+            "Barolo"
+        ],
+        "color_name": "Mursteinsrød",
+        "volume_cl": 75,
+        "price_kr": 599,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Duft av modne kirsebær, tørket frukt, lette treverk- og balsamiske toner.",
+            "taste_text": "Saftig, dyp frukt, modne faste tanniner, syrlig og fersk avslutning."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Lam og sau",
+            "Storvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 9
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 8
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Nebbiolo",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.2,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær",
+            "frukt",
+            "krydder"
+        ],
+        "wine_tastes_array": [
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 20607701,
+        "name": "Markus Molitor Brauneberger Juffer-Sonnenuhr Riesling GG 2024",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Weing. Markus Molitor",
+        "region_array": [
+            "Tyskland",
+            "Mosel",
+            "Brauneberg"
+        ],
+        "color_name": "Lys gyllengul",
+        "volume_cl": 75,
+        "price_kr": 564.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Duft av fersken, aprikos, krydder, urter og flint.",
+            "taste_text": "Rik frukt, balansert syre og lang skiferpreget avslutning."
+        },
+        "wine_foodtypes_array": [
+            "Fisk",
+            "Lyst kjøtt",
+            "Småvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 10
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Sødme",
+                "value": 2
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Riesling",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 11.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 8,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 7.6,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "krydder",
+            "fersk"
+        ],
+        "wine_tastes_array": [
+            "balansert",
+            "lang",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 20607601,
+        "name": "Markus Molitor Brauneberger Klostergarten Pinot Noir*** 2022",
+        "vintage_year": 2022,
+        "wine_type": "Rødvin",
+        "producer_name": "Weing. Markus Molitor",
+        "region_array": [
+            "Tyskland",
+            "Mosel",
+            "Brauneberg"
+        ],
+        "color_name": "Rubinrød",
+        "volume_cl": 75,
+        "price_kr": 879.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Duft av røde bær og skifermineraler.",
+            "taste_text": "Fyldig, saftig. Dybde, røde bær og lang mineralsk ettersmak."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Småvilt",
+            "Storvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 12
+            },
+            {
+                "name": "Friskhet",
+                "value": 4
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 7
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Pinot Noir",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "røde_bær",
+            "fyldig",
+            "lang",
+            "mineralsk"
+        ]
+    },
+    {
+        "vmp_id": 20607501,
+        "name": "Markus Molitor Bernkasteler Badstube Riesling Spätlese feinherb 2024",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Weing. Markus Molitor",
+        "region_array": [
+            "Tyskland",
+            "Mosel",
+            "Bernkastel"
+        ],
+        "color_name": "Strågul",
+        "volume_cl": 75,
+        "price_kr": 279.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Gule epler, fersken, krydder og steinmineraler.",
+            "taste_text": "Frisk og konsentrert, frukt, syre, streif av lys honning og flint."
+        },
+        "wine_foodtypes_array": [
+            "Fisk",
+            "Lyst kjøtt",
+            "Småvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 9
+            },
+            {
+                "name": "Sødme",
+                "value": 6
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Riesling",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 9.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 34.4,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 7.4,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "eple",
+            "krydder",
+            "fersk",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "frisk",
+            "konsentrert",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 20607401,
+        "name": "Markus Molitor Zeltinger Sonnenhr Riesling Auslese** 2024",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Weing. Markus Molitor",
+        "region_array": [
+            "Tyskland",
+            "Mosel",
+            "Zeltingen"
+        ],
+        "color_name": "Lys gyllengul",
+        "volume_cl": 75,
+        "price_kr": 539.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Duft av moden sitrus, aprikos og skifer.",
+            "taste_text": "Rik og konsentrert, honning og aprikos, med frisk syre og skifermineraler."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Ost",
+            "Dessert"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 10
+            },
+            {
+                "name": "Friskhet",
+                "value": 10
+            },
+            {
+                "name": "Sødme",
+                "value": 10
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Riesling",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 7.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 85,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 7.2,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "sitrus"
+        ],
+        "wine_tastes_array": [
+            "frisk",
+            "konsentrert",
+            "mineralsk"
+        ]
+    },
+    {
+        "vmp_id": 20607301,
+        "name": "Markus Molitor Okfener Bockstein Riesling Kabinett 2024",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Weing. Markus Molitor",
+        "region_array": [
+            "Tyskland",
+            "Mosel",
+            "Ockfen"
+        ],
+        "color_name": "Lys strågul",
+        "volume_cl": 75,
+        "price_kr": 250,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Fruktig aroma preget av eple, sitrus og urter, innslag av blomst og mineraler.",
+            "taste_text": "Ung og slank, preg av sitrus, eple og urter, innslag av mineraler i ettersmak."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Ost",
+            "Dessert"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 4
+            },
+            {
+                "name": "Friskhet",
+                "value": 9
+            },
+            {
+                "name": "Sødme",
+                "value": 8
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Riesling",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 7,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 43.3,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 10.2,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "frukt",
+            "eple",
+            "sitrus",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "sitrus",
+            "mineralsk"
+        ]
+    },
+    {
+        "vmp_id": 20607101,
+        "name": "Markus Molitor Zeltinger Sonnenuhr Riesling Spätlese 2024",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Weing. Markus Molitor",
+        "region_array": [
+            "Tyskland",
+            "Mosel",
+            "Zeltingen"
+        ],
+        "color_name": "Lys gyllengul",
+        "volume_cl": 75,
+        "price_kr": 309,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Duft av fersken, epler, blomster, urter.",
+            "taste_text": "Fruktig og syrefrisk, lang mineralsk ettersmak."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Ost",
+            "Dessert"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 10
+            },
+            {
+                "name": "Sødme",
+                "value": 9
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Riesling",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 7,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 63.9,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 8.4,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "eple",
+            "fersk"
+        ],
+        "wine_tastes_array": [
+            "frisk",
+            "lang",
+            "mineralsk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 20607001,
+        "name": "Markus Molitor Wehlener Sonnenhr Riesling Auslese** 2024",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Weing. Markus Molitor",
+        "region_array": [
+            "Tyskland",
+            "Mosel",
+            "Wehlen"
+        ],
+        "color_name": "Lys gyllengul",
+        "volume_cl": 75,
+        "price_kr": 539.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Duft av sitrus, røde epler og skifermineraler.",
+            "taste_text": "Balansert og konsentrert, frisk syre og moden frukt, mineralsk avslutning."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Ost",
+            "Dessert"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 10
+            },
+            {
+                "name": "Friskhet",
+                "value": 9
+            },
+            {
+                "name": "Sødme",
+                "value": 10
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Riesling",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 7.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 88.9,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 6.5,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "eple",
+            "sitrus",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "balansert",
+            "frisk",
+            "konsentrert",
+            "mineralsk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 20606801,
+        "name": "Markus Molitor Wehlener Sonnenuhr Riesling Spätlese 2024",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Weing. Markus Molitor",
+        "region_array": [
+            "Tyskland",
+            "Mosel",
+            "Wehlen"
+        ],
+        "color_name": "Lys gyllengul",
+        "volume_cl": 75,
+        "price_kr": 309,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Duft av fersken, epler, blomster, urter og mineraler.",
+            "taste_text": "Fruktig og syrefrisk, lang mineralsk ettersmak."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Ost",
+            "Dessert"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 9
+            },
+            {
+                "name": "Sødme",
+                "value": 9
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Riesling",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 7,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 60.4,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 7.9,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "eple",
+            "fersk",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "frisk",
+            "lang",
+            "mineralsk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 20606701,
+        "name": "Markus Molitor Zeltinger Sonnenuhr Riesling Auslese*** 2024",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Weing. Markus Molitor",
+        "region_array": [
+            "Tyskland",
+            "Mosel",
+            "Zeltingen"
+        ],
+        "color_name": "Gyllengul",
+        "volume_cl": 75,
+        "price_kr": 879.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Duft av aprikos, sitrus, urter og flint.",
+            "taste_text": "Ren, dyp og konsentrert, lang mineralsk avslutning."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Ost",
+            "Dessert"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 11
+            },
+            {
+                "name": "Friskhet",
+                "value": 10
+            },
+            {
+                "name": "Sødme",
+                "value": 10
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Riesling",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 7,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 105.4,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 6.6,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "sitrus"
+        ],
+        "wine_tastes_array": [
+            "lang",
+            "konsentrert",
+            "mineralsk"
+        ]
+    },
+    {
+        "vmp_id": 20606601,
+        "name": "Markus Molitor Bernkasteler Doctor Riesling Tørr*** 2024",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Weing. Markus Molitor",
+        "region_array": [
+            "Tyskland",
+            "Mosel",
+            "Bernkastel"
+        ],
+        "color_name": "Lys gyllengul",
+        "volume_cl": 75,
+        "price_kr": 5,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av fersken, moden sitrus, krydder og flint.",
+            "taste_text": "Rik frukt, balansert syre og lang skiferpreget avslutning."
+        },
+        "wine_foodtypes_array": [
+            "Fisk",
+            "Lyst kjøtt",
+            "Småvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 11
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Sødme",
+                "value": 2
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Riesling",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 11.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 11.5,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 7.7,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "krydder",
+            "sitrus",
+            "fersk"
+        ],
+        "wine_tastes_array": [
+            "balansert",
+            "lang",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 20606301,
+        "name": "Jérôme Arnoux Révélation Pinot Noir 2023",
+        "vintage_year": 2023,
+        "wine_type": "Rødvin",
+        "producer_name": "Jérôme Arnoux",
+        "region_array": [
+            "Frankrike",
+            "Jura",
+            "Côtes du Jura"
+        ],
+        "color_name": "Dyp rød med blåskjær",
+        "volume_cl": 75,
+        "price_kr": 379.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Litt utviklet preg av moden jordbær, morell og kirsebær, litt kamfer, urt, blomst, skogbunn og fat.",
+            "taste_text": "Saftig, litt krydret og fast, preg av modne røde bær, kirsebær, litt urter, lakris, kamfer og fat."
+        },
+        "wine_foodtypes_array": [
+            "Lyst kjøtt",
+            "Storvilt",
+            "Svin"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 7
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 8
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Pinot Noir",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 12,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 3.7,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær"
+        ],
+        "wine_tastes_array": [
+            "røde_bær"
+        ]
+    },
+    {
+        "vmp_id": 20606201,
+        "name": "Zähringer Maltesergarten Spätburgunder Réserve",
+        "vintage_year": 2022,
+        "wine_type": "Rødvin",
+        "producer_name": "Weingut Wilhelm Zähringer",
+        "region_array": [
+            "Tyskland",
+            "Baden",
+            "Heitersheim"
+        ],
+        "color_name": "Dyp rød",
+        "volume_cl": 75,
+        "price_kr": 299.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Røde bær, urter og krydder.",
+            "taste_text": "Fyldig med røde bær og krydder, myk og lang ettersmak."
+        },
+        "wine_foodtypes_array": [
+            "Storfe",
+            "Lam og sau",
+            "Småvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 6
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 7
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Sp",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13.5,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.2,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær",
+            "krydder"
+        ],
+        "wine_tastes_array": [
+            "røde_bær",
+            "fyldig",
+            "lang"
+        ]
+    },
+    {
+        "vmp_id": 20606101,
+        "name": "Zähringer Chardonnay",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Weingut Wilhelm Zähringer",
+        "region_array": [
+            "Tyskland",
+            "Baden"
+        ],
+        "color_name": "Lys",
+        "volume_cl": 75,
+        "price_kr": 250,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Fruktig og litt krydret.",
+            "taste_text": "Fyldig, fruktig og frisk, lett krydret og mineralsk avslutning."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Skalldyr",
+            "Fisk"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 7
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Chardonnay",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 6.7,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "frukt",
+            "krydder"
+        ],
+        "wine_tastes_array": [
+            "fyldig",
+            "frisk",
+            "mineralsk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 20606001,
+        "name": "Projet Non Dos Bourgogne Blanc Terre de Trias 2024",
+        "vintage_year": 2024,
+        "wine_type": "Hvitvin",
+        "producer_name": "Non Dos",
+        "region_array": [
+            "Frankrike",
+            "Burgund",
+            "Bourgogne"
+        ],
+        "color_name": "Lys strågul",
+        "volume_cl": 75,
+        "price_kr": 299.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Kompleks med aromatisk, innslag av hvite blomster, mineraler og epler.",
+            "taste_text": "Fyldig, frisk med preg av lime og mineraler. Lang avslutning."
+        },
+        "wine_foodtypes_array": [
+            "Skalldyr",
+            "Fisk",
+            "Grønnsaker"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 9
+            },
+            {
+                "name": "Friskhet",
+                "value": 9
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Chardonnay",
+                "percentage": 100
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 6.5,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "eple",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "fyldig",
+            "frisk",
+            "lang",
+            "mineralsk"
+        ]
+    },
+    {
+        "vmp_id": 20605901,
+        "name": "Zähringer Crémant Baden Extra Brut",
+        "vintage_year": 2023,
+        "wine_type": "Musserende vin - Musserende vin",
+        "producer_name": "Weingut Wilhelm Zähringer",
+        "region_array": [
+            "Tyskland",
+            "Sekt"
+        ],
+        "color_name": "Lys",
+        "volume_cl": 75,
+        "price_kr": 269.9,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Sitrus, epler, urter og litt bakverk.",
+            "taste_text": "Frisk, fruktig og tørr."
+        },
+        "wine_foodtypes_array": [
+            "Aperitiff",
+            "Skalldyr",
+            "Grønnsaker"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 6
+            },
+            {
+                "name": "Friskhet",
+                "value": 7
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Chardonnay",
+                "percentage": 40
+            },
+            {
+                "name": "Sp",
+                "percentage": 60
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 12,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 4,
+                "unit": "g/l",
+                "less_than": false
+            },
+            {
+                "name": "Syre",
+                "amount": 5.7,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "eple",
+            "sitrus"
+        ],
+        "wine_tastes_array": [
+            "tørr",
+            "frisk",
+            "fruktig"
+        ]
+    },
+    {
+        "vmp_id": 20604201,
+        "name": "Alain Brumont Torus Blanc 2025",
+        "vintage_year": 2025,
+        "wine_type": "Hvitvin",
+        "producer_name": "Alain Brumont",
+        "region_array": [
+            "Frankrike",
+            "Sørvest",
+            "Pacherenc-du-Vic Bilh"
+        ],
+        "color_name": "Lys strågul",
+        "volume_cl": 75,
+        "price_kr": 245,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma preget av hvite blomster, sitrus, pære og fersken, innslag av urter og mineralitet.",
+            "taste_text": "Tørr, frisk og middels fyldig, preg av eple og sitrus. Mineralsk avslutning."
+        },
+        "wine_foodtypes_array": [
+            "Fisk",
+            "Lyst kjøtt",
+            "Ost"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 8
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Sødme",
+                "value": 1
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Petit Courbu",
+                "percentage": 70
+            },
+            {
+                "name": "Petit Manseng",
+                "percentage": 30
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 14,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 3.9,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "sitrus",
+            "fersk",
+            "mineral"
+        ],
+        "wine_tastes_array": [
+            "fyldig",
+            "tørr",
+            "frisk",
+            "sitrus",
+            "mineralsk"
+        ]
+    },
+    {
+        "vmp_id": 20604101,
+        "name": "Ksara Clos St Alphonse 2022",
+        "vintage_year": 2022,
+        "wine_type": "Rødvin",
+        "producer_name": "Ch. Ksara",
+        "region_array": [
+            "Libanon",
+            "Bekaa Valley"
+        ],
+        "color_name": "Rubinrød",
+        "volume_cl": 75,
+        "price_kr": 179,
+        "purchase_category_name": "Bestillingsutvalget",
+        "wine_descriptions_object": {
+            "aroma_text": "Aroma av modne mørke og røde bær, litt syltet frukt, innslag av urter og lakris.",
+            "taste_text": "Saftig og litt utviklet preg av røde og mørke skogsbær, urter og litt lakris."
+        },
+        "wine_foodtypes_array": [
+            "Lyst kjøtt",
+            "Storfe",
+            "Småvilt"
+        ],
+        "wine_properties_array": [
+            {
+                "name": "Fylde",
+                "value": 7
+            },
+            {
+                "name": "Friskhet",
+                "value": 8
+            },
+            {
+                "name": "Garvestoffer",
+                "value": 4
+            }
+        ],
+        "wine_grapes_array": [
+            {
+                "name": "Cabernet Sauvignon",
+                "percentage": 40
+            },
+            {
+                "name": "Syrah",
+                "percentage": 60
+            }
+        ],
+        "wine_contents_array": [
+            {
+                "name": "Alkohol",
+                "amount": 13,
+                "unit": "%",
+                "less_than": false
+            },
+            {
+                "name": "Sukker",
+                "amount": 3,
+                "unit": "g/l",
+                "less_than": true
+            },
+            {
+                "name": "Syre",
+                "amount": 5.4,
+                "unit": "g/l",
+                "less_than": false
+            }
+        ],
+        "wine_aromas_array": [
+            "røde_bær",
+            "frukt"
+        ],
+        "wine_tastes_array": []
+    }
+]
