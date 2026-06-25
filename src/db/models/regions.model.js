@@ -20,14 +20,43 @@ async function insertRegion(regionName, parentRegionName) {
     return insertRes.rows[0];
 }
 
-async function addWineRegionsArrayToDB(regionsArray) {
+async function insertRegionArray(regionsArray) {
     for (const [index, region] of regionsArray.entries()) {
         let regionRow = await insertRegion(region, regionsArray[index-1]);
         if (index === regionsArray.length - 1) return regionRow.region_id;
     }
 }
 
+async function getFullRegionPath(regionId) {
+    try {
+        const regionArray = [];
+
+        const parentQuery = 'SELECT parent_id FROM regions WHERE region_id = $1 LIMIT 1';
+        const nameQuery = 'SELECT name FROM regions WHERE region_id = $1 LIMIT 1';
+
+        let currentId = regionId;
+
+        let loopCount = 0;
+        while (true) {
+            const nameRes = await db.query(nameQuery, [currentId]);
+            const name = nameRes.rows[0].name;
+
+            regionArray.push(name);
+
+            const parentRes = await db.query(parentQuery, [currentId])
+            currentId = parentRes.rows[0].parent_id;
+
+            if (!currentId) return regionArray.toReversed();
+
+            loopCount++;
+        }        
+    } catch (err) {
+        console.error('Error getting full region path:', err.stack)
+    }
+}
+
 module.exports = {
     insertRegion,
-    addWineRegionsArrayToDB
+    insertRegionArray,
+    getFullRegionPath
 }
