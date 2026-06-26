@@ -7,6 +7,21 @@ async function insertWineDescriptions(wineId, aromaText, tasteText) {
     await db.query(insertQuery, insertValues)
 }
 
+async function getWineDescriptions(wineId) {
+    const selectQuery = `
+        SELECT wd.aroma_text, wd.taste_text
+        FROM wine_descriptions AS wd
+        WHERE wine_id = $1
+        LIMIT 1
+    `;
+    const selectRes = await db.query(selectQuery, [wineId]);
+    return {
+        aromaText: selectRes.rows[0].aroma_text,
+        tasteText: selectRes.rows[0].taste_text       
+    }
+}
+
 module.exports = {
-    insertWineDescriptions
+    insertWineDescriptions,
+    getWineDescriptions
 }

@@ -33,8 +33,35 @@ async function insertSimpleJunctionTable(baseTableName, baseKeyName, baseKeyValu
     }
 }
 
+async function readSimpleJunctionTable(wineId, junctionTable, baseTable, idKey, keyToRead) {
+    const idsQuery = `
+        SELECT jt.${idKey}
+        FROM ${junctionTable} AS jt
+        WHERE wine_id = $1
+    `;
+    const idsRes = await db.query(idsQuery, [wineId]); 
+    const ids = idsRes.rows.map(row => row[idKey]);
+
+    const getValuesQueryWhereConditons = (ids) => {
+        let conditons = `${idKey} = $1`;
+        for (let i = 0; i < ids.length - 1; i++) {
+            conditons += ` OR ${idKey} = $${i+2}`;
+        }
+        return conditons;
+    };
+
+    const valuesQuery = `
+        SELECT bt.${keyToRead}
+        FROM ${baseTable} AS bt
+        WHERE ${getValuesQueryWhereConditons(ids)}
+    `;
+    const valuesRes = await db.query(valuesQuery, ids);
+    return valuesRes.rows.map(row => row.name);
+}
+
 module.exports = {
     getRowIdFromKey,
     getRowIdsFromKey,
-    insertSimpleJunctionTable
+    insertSimpleJunctionTable,
+    readSimpleJunctionTable
 }
