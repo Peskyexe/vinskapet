@@ -12,48 +12,129 @@ const aromasModel = require('./aromas.model.js');
 async function addWineToDB(wineData) {
     try {
         // General data tables
-        const producerId = await utilitiesModel.getRowIdFromKey('producers', 'name', wineData.producer_name, 'producer_id');
-        const regionId = await regionsModel.insertRegionArray(wineData.region_array);
-        const colorId = await utilitiesModel.getRowIdFromKey('colors', 'name', wineData.color_name, 'color_id');
-        const purchaseCategoryId = await utilitiesModel.getRowIdFromKey('purchase_categories', 'name', wineData.purchase_category_name, 'purchase_category_id');
+        const [wineTypeId, producerId, regionId, colorId, purchaseCategoryId] = await Promise.all([
+            utilitiesModel.getRowIdFromKey('wine_types', 'name', wineData.wine_type, 'wine_type_id'),
+            utilitiesModel.getRowIdFromKey('producers', 'name', wineData.producer_name, 'producer_id'),
+            regionsModel.insertRegionArray(wineData.region_array),
+            utilitiesModel.getRowIdFromKey('colors', 'name', wineData.color_name, 'color_id'),
+            utilitiesModel.getRowIdFromKey('purchase_categories', 'name', wineData.purchase_category_name, 'purchase_category_id'),
+        ])
 
-        // Wine table
-        const wineQuery = 'INSERT INTO wines(vmp_id, name, vintage_year, wine_type, producer_id, region_id, color_id, volume_cl, price_kr, purchase_category_id) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING wine_id';
-        const wineValues = [
+        const insertQuery = `
+            INSERT INTO wines(vmp_id, name, vintage_year, wine_type_id, producer_id, region_id, color_id, volume_cl, price_kr, purchase_category_id)
+            VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
+            RETURNING wine_id
+        `;
+        const insertRes = await db.query(insertQuery, [
             wineData.vmp_id,
             wineData.name,
             wineData.vintage_year,
-            wineData.wine_type,
+            wineTypeId,
             producerId,
             regionId,
             colorId,
             wineData.volume_cl,
             wineData.price_kr,
             purchaseCategoryId
-        ];
+        ]);
 
-        const wineRes = await db.query(wineQuery, wineValues);
-        const wineId = wineRes.rows[0].wine_id;
+        const wineId = insertRes.rows[0].wine_id;
 
-        // Wine foreign tables
-        await wineDescriptionsModel.insertWineDescriptions(wineId, wineData.wine_descriptions_object.aroma_text, wineData.wine_descriptions_object.taste_text);
-        await foodtypesModel.insertWineFoodtypes(wineId, wineData.wine_foodtypes_array);
-        await propertiesModel.insertWineProperties(wineId, wineData.wine_properties_array);
-        await grapesModel.insertWineGrapes(wineId, wineData.wine_grapes_array);
-        await contentsModel.insertWineContents(wineId, wineData.wine_contents_array);
-        await tastesModel.insertWineTastes(wineId, wineData.wine_tastes_array);
-        await aromasModel.insertWineAromas(wineId, wineData.wine_aromas_array);
+        // Junction tables
+        await Promise.all([
+            wineDescriptionsModel.insertWineDescriptions(wineId, wineData.wine_descriptions_object.aroma_text, wineData.wine_descriptions_object.taste_text),
+            foodtypesModel.insertWineFoodtypes(wineId, wineData.wine_foodtypes_array),
+            propertiesModel.insertWineProperties(wineId, wineData.wine_properties_array),
+            grapesModel.insertWineGrapes(wineId, wineData.wine_grapes_array),
+            contentsModel.insertWineContents(wineId, wineData.wine_contents_array),
+            tastesModel.insertWineTastes(wineId, wineData.wine_tastes_array),
+            aromasModel.insertWineAromas(wineId, wineData.wine_aromas_array)
+        ])
+
     } catch (err) {
         console.error('Error adding wine to DB:', err.stack)
     }
     
 }
 
-async function getWineFull(VmpId) {
+// --- WINE FULL ---
+// Wine Id
+// Vmp Id
+
+// Type
+// Name
+// Full region
+// Producer
+// Price
+
+// Contents
+// Grapes
+// Foodtypes
+
+// Vintage year
+// Aroma text
+// Aromas
+// Taste text
+// Tastes
+// Color
+// Purchase category
+
+// DN score
+// Drinking window
+// Dishes
+
+// User amount
+// User status
+// User amount to-buy
+// User shelf
+// User note
+async function getWineFull(vmpId) {
     try {
-        
+        const wineQuery = `
+            SELECT w.wine_id, w.vmp_id, wt.name AS type, w.name, w.region_id, p.name AS producer, w.price_kr, w.vintage_year, c.name AS color, pc.name AS purchase_category
+            FROM wines AS w
+            JOIN wine_types AS wt ON w.wine_type_id = wt.wine_type_id
+            JOIN producers AS p ON w.producer_id = p.producer_id
+            JOIN colors AS c ON w.color_id = c.color_id
+            JOIN purchase_categories AS pc ON w.purchase_category_id = pc.purchase_category_id
+            WHERE w.vmp_id = $1
+        `;
+
+        const wineRes = await db.query(wineQuery, [vmpId]);
+        if (wineRes.rows.length === 0) return null;
+        const wine = wineRes.rows[0];
+
+        const [fullRegion, contents, grapes, foodtypes, wineDescriptions, aromas, tastes] = await Promise.all([
+            regionsModel.getFullRegionPath(wine.region_id),
+            contentsModel.getWineContents(wine.wine_id),
+            grapesModel.getWineGrapes(wine.wine_id),
+            foodtypesModel.getWineFoodtypes(wine.wine_id),
+            wineDescriptionsModel.getWineDescriptions(wine.wine_id),
+            aromasModel.getWineAromas(wine.wine_id),
+            tastesModel.getWineTastes(wine.wine_id)
+        ]);
+
+        return {
+            wineId: wine.wine_id,
+            vmpId: wine.vmp_id,
+            type: wine.type,
+            name: wine.name,
+            fullRegion,
+            producer: wine.producer,
+            price: parseFloat(wine.price_kr),
+            contents,
+            grapes,
+            foodtypes,
+            vintageYear: wine.vintage_year,
+            aromaText: wineDescriptions.aromaText,
+            aromas,
+            tasteText: wineDescriptions.tasteText,
+            tastes,
+            color: wine.color,
+            purchaseCategory: wine.purchase_category
+        }
     } catch (err) {
-        console.error(err.stack);
+        console.error('Error getting full wine data:', err.stack);
     }
 }
 
@@ -71,8 +152,7 @@ async function getWineBasic(vmpId) {
 
         const wine = wineRes.rows[0];
 
-        const regionArray = await regionsModel.getFullRegionPath(wine.region_id);
-        const fullRegion = regionArray.join(', ')
+        const fullRegion = await regionsModel.getFullRegionPath(wine.region_id);
 
         return {
             wineId: wine.wine_id,
@@ -85,7 +165,7 @@ async function getWineBasic(vmpId) {
             imagePath: wine.image_path
         };
     } catch (err) {
-        console.error('Error getting basic wine info:', err.stack);
+        console.error('Error getting basic wine data:', err.stack);
     }
 }
 
