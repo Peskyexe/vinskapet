@@ -90,7 +90,13 @@ async function populateDB() {
 }
 
 async function main() {
-    await populateDB();
+    const wineFull = await wineModel.getWineFull(897401);
+    console.log(wineFull);
 }
 
-main().catch(console.error);
+const functionName = process.argv[2];
+if (functionName === "main") {
+    main().catch(console.error);
+} else if (functionName === "populate-db") {
+    populateDB().catch(console.error);
+}
