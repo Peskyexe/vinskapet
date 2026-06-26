@@ -7,6 +7,13 @@ SELECT * FROM colors;
 SELECT * FROM wine_descriptions;
 
 SELECT * FROM foodtypes;
+SELECT * FROM wine_foodtypes;
+
+SELECT * FROM wine_types;
+
+SELECT w.name
+FROM wines AS w
+WHERE w.wine_type_id = 5;
 
 -- Selects all wines that pair well with the foodtype with id 1.
 SELECT w.*
@@ -27,3 +34,9 @@ WHERE wp.property_id = 1 AND wp.value >= 8;
 
 SELECT * FROM contents;
 SELECT * FROM wine_contents;
+
+SELECT * FROM grapes;
+SELECT * FROM wine_grapes;
+
+SELECT * FROM aromas;
+SELECT * FROM wine_aromas;
