@@ -26,13 +26,19 @@ CREATE TABLE "purchase_categories" (
   "name" varchar(50) UNIQUE NOT NULL
 );
 
+DROP TABLE IF EXISTS wine_types CASCADE;
+CREATE TABLE "wine_types" (
+  "wine_type_id" integer GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  "name" varchar(125) UNIQUE NOT NULL
+);
+
 DROP TABLE IF EXISTS wines CASCADE;
 CREATE TABLE "wines" (
   "wine_id" integer GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   "vmp_id" integer UNIQUE NOT NULL,
   "name" varchar(125) NOT NULL,
   "vintage_year" integer NOT NULL,
-  "wine_type" varchar(125) NOT NULL,
+  "wine_type_id" integer NOT NULL,
   "producer_id" integer NOT NULL,
   "region_id" integer NOT NULL,
   "color_id" integer NOT NULL,
@@ -51,7 +57,7 @@ CREATE TABLE "wines" (
 DROP TABLE IF EXISTS foodtypes CASCADE;
 CREATE TABLE "foodtypes" (
   "foodtype_id" integer GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  "foodtype" varchar(20) UNIQUE NOT NULL
+  "name" varchar(20) UNIQUE NOT NULL
 );
 
 DROP TABLE IF EXISTS properties CASCADE;
