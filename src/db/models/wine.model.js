@@ -18,7 +18,7 @@ async function addWineToDB(wineData) {
             regionsModel.insertRegionArray(wineData.region_array),
             utilitiesModel.getRowIdFromKey('colors', 'name', wineData.color_name, 'color_id'),
             utilitiesModel.getRowIdFromKey('purchase_categories', 'name', wineData.purchase_category_name, 'purchase_category_id'),
-        ])
+        ]);
 
         const insertQuery = `
             INSERT INTO wines(vmp_id, name, vintage_year, wine_type_id, producer_id, region_id, color_id, volume_cl, price_kr, purchase_category_id)
@@ -49,7 +49,7 @@ async function addWineToDB(wineData) {
             contentsModel.insertWineContents(wineId, wineData.wine_contents_array),
             tastesModel.insertWineTastes(wineId, wineData.wine_tastes_array),
             aromasModel.insertWineAromas(wineId, wineData.wine_aromas_array)
-        ])
+        ]);
 
     } catch (err) {
         console.error('Error adding wine to DB:', err.stack)
