@@ -1,7 +1,5 @@
 const scraper = require('./scraper.service')
 const parser = require('./parser.service')
-const jsonService = require('./json.service')
-
 
 async function getWineDataFull(vmpId) {
     const rawData = await scraper.getRawWineData(vmpId)
