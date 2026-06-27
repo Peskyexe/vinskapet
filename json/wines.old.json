@@ -147,8 +147,6 @@
             "konsentrert"
         ]
     },
-    null,
-    null,
     {
         "vmp_id": 897401,
         "name": "Ch. Fuissé Tête de Cuvé Pouilly-Fuissé 2023",
@@ -445,7 +443,6 @@
             "fruktig"
         ]
     },
-    null,
     {
         "vmp_id": 8189201,
         "name": "Les Hauts de Beauséjour 2001",
@@ -988,7 +985,6 @@
             "tørr"
         ]
     },
-    null,
     {
         "vmp_id": 7738501,
         "name": "Merotto Cuvée del Fondatore Valdobbiadene Prosecco Superiore 2019",
@@ -1650,8 +1646,6 @@
             "mørke_bær"
         ]
     },
-    null,
-    null,
     {
         "vmp_id": 7353001,
         "name": "Hirsch Raschen Ridge Pinot Noir 2023",
@@ -1797,8 +1791,6 @@
             "fruktig"
         ]
     },
-    null,
-    null,
     {
         "vmp_id": 6839901,
         "name": "Gironda Le Nicchie Nizza 2022",
@@ -1874,8 +1866,6 @@
             "fruktig"
         ]
     },
-    null,
-    null,
     {
         "vmp_id": 6558101,
         "name": "Dr. Konstantin Frank Dry Riesling 2024",
@@ -2551,7 +2541,6 @@
             "fyldig"
         ]
     },
-    null,
     {
         "vmp_id": 5364601,
         "name": "Lokoya Spring Mountain Cabernet Sauvignon 2011",
@@ -2890,7 +2879,6 @@
             "konsentrert"
         ]
     },
-    null,
     {
         "vmp_id": 5324801,
         "name": "Cèdre Héritage 2023",
@@ -2965,7 +2953,6 @@
             "fruktig"
         ]
     },
-    null,
     {
         "vmp_id": 5264201,
         "name": "Terre di San Leonardo 2022",
@@ -3047,9 +3034,6 @@
             "fyldig"
         ]
     },
-    null,
-    null,
-    null,
     {
         "vmp_id": 4687501,
         "name": "Quinta do Noval Vintage 2023",
@@ -3130,70 +3114,6 @@
         "wine_tastes_array": [
             "lang",
             "konsentrert",
-            "fruktig"
-        ]
-    },
-    null,
-    {
-        "vmp_id": 3991001,
-        "name": "Gordon & MacPhail Strathisla 1967",
-        "vintage_year": 1967,
-        "wine_type": "Brennevin - Whisky - Whisky, malt",
-        "producer_name": "Gordon & MacPhail",
-        "region_array": [
-            "Skottland",
-            "Speyside"
-        ],
-        "color_name": "Mørk rav",
-        "volume_cl": 70,
-        "price_kr": 20,
-        "purchase_category_name": "Bestillingsutvalget",
-        "wine_descriptions_object": {
-            "aroma_text": "Aroma av frukt, bakst og svisker. Krydder og sjokolade.",
-            "taste_text": "Fruktig, mentol, chili, rom og rosiner."
-        },
-        "wine_foodtypes_array": [
-            "Aperitiff"
-        ],
-        "wine_properties_array": [
-            {
-                "name": "Fylde",
-                "value": 9
-            },
-            {
-                "name": "Fat",
-                "value": 8
-            },
-            {
-                "name": "Røyk",
-                "value": 8
-            }
-        ],
-        "wine_grapes_array": [
-            {
-                "name": "Malt",
-                "percentage": null
-            }
-        ],
-        "wine_contents_array": [
-            {
-                "name": "Alkohol",
-                "amount": 43,
-                "unit": "%",
-                "less_than": false
-            },
-            {
-                "name": "Sukker",
-                "amount": 3,
-                "unit": "g/l",
-                "less_than": true
-            }
-        ],
-        "wine_aromas_array": [
-            "frukt",
-            "krydder"
-        ],
-        "wine_tastes_array": [
             "fruktig"
         ]
     },
@@ -3496,7 +3416,6 @@
             "fruktig"
         ]
     },
-    null,
     {
         "vmp_id": 295801,
         "name": "Hirsch Pinot Noir Reserve 2023",
@@ -3645,8 +3564,6 @@
             "fruktig"
         ]
     },
-    null,
-    null,
     {
         "vmp_id": 2229101,
         "name": "Ch. Beauséjour 2018",
@@ -3724,8 +3641,6 @@
             "konsentrert"
         ]
     },
-    null,
-    null,
     {
         "vmp_id": 2144601,
         "name": "Patrick Baudouin Le Cornillard Anjou Blanc 2022",
@@ -3871,7 +3786,6 @@
             "fruktig"
         ]
     },
-    null,
     {
         "vmp_id": 20690801,
         "name": "Odfjell Armador Sauvignon Blanc 2025",
@@ -3945,11 +3859,6 @@
             "fruktig"
         ]
     },
-    null,
-    null,
-    null,
-    null,
-    null,
     {
         "vmp_id": 20613206,
         "name": "Johan Uten Land Green Label Verdejo Premier",
@@ -4168,8 +4077,6 @@
             "lang"
         ]
     },
-    null,
-    null,
     {
         "vmp_id": 20611001,
         "name": "Pieropan Pinot Iskra 2024",
@@ -4245,10 +4152,6 @@
             "fruktig"
         ]
     },
-    null,
-    null,
-    null,
-    null,
     {
         "vmp_id": 20609706,
         "name": "Halvor Bakke Hverdagsglede Chardonnay & Viognier 2025",
@@ -4328,9 +4231,6 @@
             "fruktig"
         ]
     },
-    null,
-    null,
-    null,
     {
         "vmp_id": 20609001,
         "name": "Nerdrum Psyche",
@@ -4405,9 +4305,6 @@
             "konsentrert"
         ]
     },
-    null,
-    null,
-    null,
     {
         "vmp_id": 20608301,
         "name": "Villadoria Barolo 2022",
