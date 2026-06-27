@@ -1,0 +1,15 @@
+{
+    "vmp_wine_data_full": [
+        { "name": "name", "selector": "#page .AdCtavAO .product__name", "type": "text" },
+        { "name": "price", "selector": "#page .AdCtavAO .product__price", "type": "text"},
+        { "name": "volume_cl", "selector": "#page .AdCtavAO .volume-and-cost_per_unit .amount", "type": "text"},
+        { "name": "wine_type", "selector": "#page .AdCtavAO .Jh25vdXJ .product__category-name", "type": "text"},
+        { "name": "foodtypes", "selector": "#page .gSzVyerq .dDnT0pW8 > div:nth-child(1) li", "type": "text", "multi": true},
+        { "name": "properties", "selector": "#page .gSzVyerq .dDnT0pW8 > div:nth-child(2) li", "type": "aria-label", "multi": true},
+        { "name": "grapes", "selector": "#page .gSzVyerq .dDnT0pW8 > div:nth-last-child(2) li:last-child .YIR4eD4S div", "type": "text", "multi": true},
+        { "name": "contents", "selector": "#page .gSzVyerq .dDnT0pW8 > div:last-child li", "type": "text", "multi": true, "doubled": true},
+        { "name": "infolist", "selector": "#page .SeFRvCFQ .A86PRlFM li", "type": "text", "multi": true, "doubled": true}
+    ],
+    "vmp_wine_data_properties_backup": { "name": "properties", "selector": "#page .gSzVyerq .dDnT0pW8 > div:nth-child(1) li", "type": "aria-label", "multi": true },
+    "rate_limited_check": { "name": "rate_limit_check", "selector": "#what-happened-section h2.text-3xl.leading-tight.font-normal.mb-4.text-black-dark.antialiased", "type": "text" }
+}
