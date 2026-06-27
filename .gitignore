@@ -5,7 +5,4 @@ node_modules/
 .env
 
 # Testing / dev stuff
-data.json
-wine-data-array.json
 wine-fetch-times.txt
-wine-id-array.json
