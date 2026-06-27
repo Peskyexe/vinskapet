@@ -210,11 +210,11 @@ async function parseRawWineData(rawData) {
 
         return wineData;        
     } catch (err) {
-        await jsonSerivce.saveDataAsJSON(rawData, 'json/wine-error-data');
+        await jsonSerivce.saveDataAsJSON(rawData, 'wine-error-data');
 
-        const errors = await jsonSerivce.readDataFromJSON('json/errors');
+        const errors = await jsonSerivce.readDataFromJSON('errors');
         errors.push({desc: 'Data parsing error', vmpId: wineData.vmp_id, url: rawData.url, error: err, error_stack: err.stack});
-        await jsonSerivce.saveDataAsJSON(errors, 'json/errors');
+        await jsonSerivce.saveDataAsJSON(errors, 'errors');
 
         console.error(err)
         return wineData;

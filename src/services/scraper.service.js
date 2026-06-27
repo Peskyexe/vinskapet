@@ -208,7 +208,7 @@ async function readSelector(selector) {
 
     } catch (err) {
         try {
-            const { rate_limited_check: selector } = await jsonService.readDataFromJSON('./src/services/scraper-selectors');
+            const { rate_limited_check: selector } = await jsonService.readDataFromJSON('scraper-selectors');
             const rateLimited = await readSelectorText(selector)
             
             console.error('Being rate limited, canceling all scraping')
@@ -217,9 +217,9 @@ async function readSelector(selector) {
             console.error('Rate limit check failed,', err.stack)
         }
 
-        const errors = await jsonService.readDataFromJSON('json/errors');
+        const errors = await jsonService.readDataFromJSON('errors');
         errors.push({desc: 'Page reading error', url: currentUrl, error: err, error_stack: err.stack, selector: selector});
-        await jsonService.saveDataAsJSON(errors, 'json/errors');
+        await jsonService.saveDataAsJSON(errors, 'errors');
 
         console.error(`Error reading selector '${selector.name}',`, err.stack)
     }
@@ -228,7 +228,7 @@ async function readSelector(selector) {
 }
 
 
-async function readSelectorsArray(selectors, vmpId) {
+async function readSelectorsArray(selectors) {
     const startTime = performance.now()
 
     const data = {}
@@ -246,13 +246,13 @@ async function readSelectorsArray(selectors, vmpId) {
 async function getRawWineData(vmpId) {
     await openVmpWinePage(vmpId);
 
-    const { vmp_wine_data_full: selectors } = await jsonService.readDataFromJSON('./src/services/scraper-selectors');
-    const data = await readSelectorsArray(selectors, vmpId);
+    const { vmp_wine_data_full: selectors } = await jsonService.readDataFromJSON('scraper-selectors');
+    const data = await readSelectorsArray(selectors);
 
     // Error handling incase no wine properties where found. Can happen if a wine doesn't have any foodtypes.
     if (!data.properties.value[0]) {
         delete data.foodtypes;
-        const { vmp_wine_data_properties_backup: propertiesSelector } = await jsonService.readDataFromJSON('./src/services/scraper-selectors');
+        const { vmp_wine_data_properties_backup: propertiesSelector } = await jsonService.readDataFromJSON('scraper-selectors');
         data.properties = await readSelector(propertiesSelector)
     }
 

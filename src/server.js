@@ -15,7 +15,7 @@ async function constructWineIdArray() {
             console.error(err);
         }
     }    
-    await jsonSerivce.saveDataAsJSON(wineIdArray, 'json/wine-id-array');
+    await jsonSerivce.saveDataAsJSON(wineIdArray, 'wine-ids');
     return wineIdArray;
 }
 
@@ -30,7 +30,7 @@ async function createWineDataArray(wineIdArray) {
             console.error(err.stack)
         }
     }
-    await jsonSerivce.saveDataAsJSON(wineDataArray, 'json/wines');
+    await jsonSerivce.saveDataAsJSON(wineDataArray, 'wines');
     return wineDataArray;
 }
 
@@ -81,7 +81,7 @@ async function testDataFetchTime() {
 async function populateDB() {
     await db.resetDB();
 
-    let wines = await jsonSerivce.readDataFromJSON('json/wines')
+    let wines = await jsonSerivce.readDataFromJSON('wines')
 
     for (const wine of wines) {
         await wineModel.addWineToDB(wine);
@@ -96,7 +96,7 @@ async function main() {
 }
 
 async function getWinesVmp() {
-    createWineDataArray(await jsonSerivce.readDataFromJSON('json/wine-ids')).catch(console.error);
+    createWineDataArray(await jsonSerivce.readDataFromJSON('wine-ids')).catch(console.error);
 }
 
 const functionName = process.argv[2];
