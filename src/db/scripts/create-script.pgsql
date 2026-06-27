@@ -37,7 +37,7 @@ CREATE TABLE "wines" (
   "wine_id" integer GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   "vmp_id" integer UNIQUE NOT NULL,
   "name" varchar(125) NOT NULL,
-  "vintage_year" integer NOT NULL,
+  "vintage_year" integer,
   "wine_type_id" integer NOT NULL,
   "producer_id" integer NOT NULL,
   "region_id" integer NOT NULL,
