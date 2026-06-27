@@ -1,7 +1,8 @@
-const puppeteer = require('puppeteer-extra')
+const puppeteer = require('puppeteer-extra');
+const jsonService = require('./json.service.js');
 
-const StealthPlugin = require('puppeteer-extra-plugin-stealth')
-puppeteer.use(StealthPlugin())
+const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+puppeteer.use(StealthPlugin());
 
 let browser;
 let page;
@@ -72,12 +73,13 @@ function closeBrowser() {
     console.log('Browser Closed.')
 }
 
-
+let currentUrl = '';
 async function openPage(url) {
     if (browserLaunched === false) await launchBrowser();
 
     const startTime = performance.now();
 
+    currentUrl = url;
     await page.goto(url, { waitUntil: 'domcontentloaded' });
     try { await page.click('.MqTnNSaV.SstETDah .btn-secondary', { timeout: 1000 }); } catch(e) {}
 
@@ -91,27 +93,29 @@ async function openVmpWinePage(vmpWineId) {
 }
 
 
+const selectorArgs = { visible: true, timeout: 5000 }
+
 async function readSelectorText(selector) {
-    await page.waitForSelector(selector, { visible: true, timeout: 7000 })
+    await page.waitForSelector(selector, selectorArgs)
     const text = await page.$eval(selector, el => el.textContent.trim())
     return text
 }
 
 async function readSelectorAttr(selector, attr) {
-    await page.waitForSelector(selector, { visible: true, timeout: 7000 })
+    await page.waitForSelector(selector, selectorArgs)
     const text = await page.$eval(selector, el => el.getAttribute(attr))
     return text
 }
 
 
 async function readSelectorTextAll(selector) {
-    await page.waitForSelector(selector, { visible: true, timeout: 7000 })
+    await page.waitForSelector(selector, selectorArgs)
     const texts = await page.$$eval(selector, els => els.map(el => el.textContent.trim()))
     return texts
 }
 
 async function readSelectorAttrsAll(selector, attr) {
-    await page.waitForSelector(selector, { visible: true, timeout: 7000 })
+    await page.waitForSelector(selector, selectorArgs)
     const attrs = await page.$$eval(selector, (els, a) => els.map(el => el.getAttribute(a)), attr)
     return attrs
 }
@@ -165,58 +169,96 @@ function splitDoubledStringsArray(inputsArray) {
 }
 
 
-async function readSelectorsArray(selectors) {
-    const startTime = performance.now()
-    const returnObject = {}
+async function readSelector(selector) {
+    let value;
+    let type;
+    let multi;
+    let doubled;
 
-    for (const selector of selectors) {
-        let value;
-        let type;
-        let multi;
-        let doubled;
+    try {
+        type = selector.type;
 
-        try {
-            type = selector.type;
+        if (selector.multi === true) {
+            multi = true;
 
-            if (selector.multi === true) {
-                multi = true;
-
-                if (selector.type === 'text') {
-                    value = await readSelectorTextAll(selector.selector)
-                } else if (selector.type != null) {
-                    value = await readSelectorAttrsAll(selector.selector, selector.type)
-                }
-
-                if (selector.doubled === true) {
-                    doubled = true;
-                    value = splitDoubledStringsArray(value);
-                }
-            }
-            
-            else if (selector.multi == null) {
-                if (selector.type === 'text') {
-                    value = await readSelectorText(selector.selector)
-                } else if (selector.type != null) {
-                    value = await readSelectorAttr(selector.selector, selector.type)
-                }
-
-                if (selector.doubled === true) {
-                    doubled = true;
-                    value = splitDoubledString(value)[0];
-                }
+            if (selector.type === 'text') {
+                value = await readSelectorTextAll(selector.selector)
+            } else if (selector.type != null) {
+                value = await readSelectorAttrsAll(selector.selector, selector.type)
             }
 
-        } catch (e) {
-            console.error(e)
+            if (selector.doubled === true) {
+                doubled = true;
+                value = splitDoubledStringsArray(value);
+            }
+        }
+        
+        else if (selector.multi == null) {
+            if (selector.type === 'text') {
+                value = await readSelectorText(selector.selector)
+            } else if (selector.type != null) {
+                value = await readSelectorAttr(selector.selector, selector.type)
+            }
+
+            if (selector.doubled === true) {
+                doubled = true;
+                value = splitDoubledString(value)[0];
+            }
         }
 
-        selectorObject = { value: value, type: selector.type, multi: !!selector.multi, doubled: !!selector.doubled }
-        returnObject[selector.name] = selectorObject
+    } catch (err) {
+        try {
+            const { rate_limited_check: selector } = await jsonService.readDataFromJSON('./src/services/scraper-selectors');
+            const rateLimited = await readSelectorText(selector)
+            
+            console.error('Being rate limited, canceling all scraping')
+            if (rateLimited) return 'Rate limited';
+        } catch (err) {
+            console.error('Rate limit check failed,', err.stack)
+        }
+
+        const errors = await jsonService.readDataFromJSON('json/errors');
+        errors.push({desc: 'Page reading error', url: currentUrl, error: err, error_stack: err.stack, selector: selector});
+        await jsonService.saveDataAsJSON(errors, 'json/errors');
+
+        console.error(`Error reading selector '${selector.name}',`, err.stack)
+    }
+
+    return { value: value, type: selector.type, multi: !!selector.multi, doubled: !!selector.doubled }
+}
+
+
+async function readSelectorsArray(selectors, vmpId) {
+    const startTime = performance.now()
+
+    const data = {}
+    data['url'] = currentUrl;
+
+    for (const selector of selectors) {
+        data[selector.name] = await readSelector(selector);
     }
 
     logExecution('Page read', startTime)
 
-    return returnObject;
+    return data;
+}
+
+async function getRawWineData(vmpId) {
+    await openVmpWinePage(vmpId);
+
+    const { vmp_wine_data_full: selectors } = await jsonService.readDataFromJSON('./src/services/scraper-selectors');
+    const data = await readSelectorsArray(selectors, vmpId);
+
+    // Error handling incase no wine properties where found. Can happen if a wine doesn't have any foodtypes.
+    if (!data.properties.value[0]) {
+        delete data.foodtypes;
+        const { vmp_wine_data_properties_backup: propertiesSelector } = await jsonService.readDataFromJSON('./src/services/scraper-selectors');
+        data.properties = await readSelector(propertiesSelector)
+    }
+
+    await closeBrowser();
+
+    return data;
 }
 
 
@@ -239,4 +281,5 @@ module.exports = {
     openVmpWinePage,
     readSelectorsArray,
     getWineIdsFromSearchURL,
+    getRawWineData
 }
