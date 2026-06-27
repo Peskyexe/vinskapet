@@ -24,12 +24,13 @@ async function createWineDataArray(wineIdArray) {
     for (const wineId of wineIdArray) {
         try {
             const data = await vmpService.getWineDataFull(wineId);
+            if (data === 'Rate limited') return;
             wineDataArray.push(data);            
         } catch (err) {
             console.error(err.stack)
         }
     }
-    await jsonSerivce.saveDataAsJSON(wineDataArray, 'json/wine-data-array');
+    await jsonSerivce.saveDataAsJSON(wineDataArray, 'json/wines');
     return wineDataArray;
 }
 
@@ -94,9 +95,15 @@ async function main() {
     console.log(wineFull);
 }
 
+async function getWinesVmp() {
+    createWineDataArray(await jsonSerivce.readDataFromJSON('json/wine-ids')).catch(console.error);
+}
+
 const functionName = process.argv[2];
 if (functionName === "main") {
     main().catch(console.error);
 } else if (functionName === "populate-db") {
     populateDB().catch(console.error);
+} else if (functionName === "get-wines-vmp") {
+    getWinesVmp();
 }
