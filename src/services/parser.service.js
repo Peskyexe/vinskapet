@@ -1,3 +1,5 @@
+const jsonSerivce = require('./json.service.js');
+
 const aromaKeywords = {
     røde_bær: ['røde bær', 'røde og mørke bær', 'tyttebær', 'bringebær', 'jordbær', 'villjordbær', 'kirsebær', 'rips', 'multer'],
     mørke_bær: ['mørke bær', 'bjørnebær', 'solbær', 'blåbær', 'blokkebær'],
@@ -90,7 +92,7 @@ function parseProperties(rawPropertyStringsArray) {
         const name = splitResult[0];
         const value = parseInt(matchResult[0]);
 
-        parsedProperties.push({ name, value });
+        parsedProperties.push({ name, value });            
     }
 
     return parsedProperties;
@@ -143,28 +145,28 @@ function parseContents(rawContentsArray) {
 }
 
 
-function parseRawWineData(rawData) {
-    try {
-        let wineData = {
-            vmp_id: null,
-            name: null,
-            vintage_year: null,
-            wine_type: null,
-            producer_name: null,
-            region_array: [],
-            color_name: null,
-            volume_cl: null,
-            price_kr: null,
-            purchase_category_name: null,
-            wine_descriptions_object: {},
-            wine_foodtypes_array: [],
-            wine_properties_array: [],
-            wine_grapes_array: [],
-            wine_contents_array: [],
-            wine_aromas_array: [],
-            wine_tastes_array: []
-        };
+async function parseRawWineData(rawData) {
+    let wineData = {
+        vmp_id: null,
+        name: null,
+        vintage_year: null,
+        wine_type: null,
+        producer_name: null,
+        region_array: [],
+        color_name: null,
+        volume_cl: null,
+        price_kr: null,
+        purchase_category_name: null,
+        wine_descriptions_object: {},
+        wine_foodtypes_array: [],
+        wine_properties_array: [],
+        wine_grapes_array: [],
+        wine_contents_array: [],
+        wine_aromas_array: [],
+        wine_tastes_array: []
+    };
 
+    try {
         const infoMap = Object.fromEntries(
             rawData.infolist.value.map(item => [item.label, item.value])
         );
@@ -173,8 +175,8 @@ function parseRawWineData(rawData) {
 
         wineData.name = rawData.name.value;
 
-        wineData.vintage_year = parseVintageYear(infoMap['Årgang']);
-
+        if (infoMap['Årgang']) wineData.vintage_year = parseVintageYear(infoMap['Årgang']);
+        
         wineData.wine_type = rawData.wine_type.value;
 
         wineData.producer_name = infoMap['Produsent'];
@@ -194,7 +196,7 @@ function parseRawWineData(rawData) {
             taste_text: infoMap['Smak']
         }
 
-        wineData.wine_foodtypes_array = rawData.foodtypes.value;
+        if (rawData.foodtypes) wineData.wine_foodtypes_array = rawData.foodtypes.value;
 
         wineData.wine_properties_array = parseProperties(rawData.properties.value);
 
@@ -207,9 +209,15 @@ function parseRawWineData(rawData) {
         wineData.wine_tastes_array = parseStringBasedOnKeywords(infoMap['Smak'], tasteKeywords);
 
         return wineData;        
-    } catch (error) {
-        console.error(error)
-        return null
+    } catch (err) {
+        await jsonSerivce.saveDataAsJSON(rawData, 'json/wine-error-data');
+
+        const errors = await jsonSerivce.readDataFromJSON('json/errors');
+        errors.push({desc: 'Data parsing error', vmpId: wineData.vmp_id, url: rawData.url, error: err, error_stack: err.stack});
+        await jsonSerivce.saveDataAsJSON(errors, 'json/errors');
+
+        console.error(err)
+        return wineData;
     }
 }
 
