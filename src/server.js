@@ -136,10 +136,6 @@ app.get('/', async (request, response) => {
     response.send(await readFile(path.join(publicPath, 'testing.html'), 'utf8'));
 });
 
-app.get('/style', async (request, response) => {
-    response.send(await readFile(path.join(publicPath, 'style-testing.html'), 'utf8'));
-});
-
 app.listen(process.env.PORT || 3000, () => {
     console.log("Server running on http://localhost:3000/. To stop the server, press Ctrl + C");
 });
