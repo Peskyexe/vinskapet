@@ -86,12 +86,13 @@ async function openPage(url) {
     logExecution('Page opened', startTime);
 }
 
-async function openVmpWinePage(vmpWineId) {
-    const wineUrl = `https://www.vinmonopolet.no/p/${vmpWineId}`;
-    await openPage(wineUrl)
+async function disableJS() {
     if (page.isJavaScriptEnabled()) await page.setJavaScriptEnabled(false);
 }
 
+async function enableJS() {
+    if (!page.isJavaScriptEnabled()) await page.setJavaScriptEnabled(true);
+}
 
 const selectorArgs = { visible: true, timeout: 5000 }
 
@@ -243,43 +244,12 @@ async function readSelectorsArray(selectors) {
     return data;
 }
 
-async function getRawWineData(vmpId) {
-    await openVmpWinePage(vmpId);
-
-    const { vmp_wine_data_full: selectors } = await jsonService.readDataFromJSON('scraper-selectors');
-    const data = await readSelectorsArray(selectors);
-
-    // Error handling incase no wine properties where found. Can happen if a wine doesn't have any foodtypes.
-    if (!data.properties.value[0]) {
-        delete data.foodtypes;
-        const { vmp_wine_data_properties_backup: propertiesSelector } = await jsonService.readDataFromJSON('scraper-selectors');
-        data.properties = await readSelector(propertiesSelector)
-    }
-
-    await closeBrowser();
-
-    return data;
-}
-
-
-// Temp function
-// For testing / dev
-async function getWineIdsFromSearchURL(searchUrl) {
-    await openPage(searchUrl)
-
-    const wineBasicIdSelector = '#page .KI6uSqU0 #search-results .psEpICvo .qUiEt7Bj .cesCq991';
-    const winesArray = await readSelectorTextAll(wineBasicIdSelector)
-
-    await closeBrowser()
-    return winesArray
-}
-
 module.exports = {
     launchBrowser,
     closeBrowser,
     openPage,
-    openVmpWinePage,
+    disableJS,
+    enableJS,
     readSelectorsArray,
-    getWineIdsFromSearchURL,
-    getRawWineData
+    getWineIdsFromSearchURL
 }

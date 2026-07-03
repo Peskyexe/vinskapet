@@ -3,13 +3,13 @@ const vmpService = require('./services/vmp.service.js')
 const wineModel = require('./db/models/wine.model.js')
 const db = require('./db/db.js')
 
-async function constructWineIdArray() {
+async function createWineIdArray() {
     let wineIdArray = [];
     const pagesToSearch = 5;
     for (let i = 0; i < pagesToSearch; i++) {
         try {
             const urlToSearch = `https://www.vinmonopolet.no/search?currentPage=${i}&q=%3Arelevance`;
-            const wineIds = await scraper.getWineIdsFromSearchURL(urlToSearch, i);
+            const wineIds = await vmpService.getWineIdsFromSearchURL(urlToSearch, i);
             wineIdArray = [...wineIdArray, ...wineIds];            
         } catch (err) {
             console.error(err);
@@ -23,7 +23,7 @@ async function createWineDataArray(wineIdArray) {
     let wineDataArray = [];
     for (const wineId of wineIdArray) {
         try {
-            const data = await vmpService.getWineDataFull(wineId);
+            const data = await vmpService.getFullWineData(wineId);
             if (data === 'Rate limited') return;
             wineDataArray.push(data);            
         } catch (err) {
@@ -42,7 +42,7 @@ async function testDataFetchTime() {
     const getDataFetchTime = async () => {
         try {
             const startTime = performance.now();
-            const wineData = await vmpService.getWineDataFull('9929801');
+            const wineData = await vmpService.getFullWineData('9929801');
 
             if (wineData) return calculateFetchTime(startTime); 
         } catch (err) {
