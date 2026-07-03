@@ -78,17 +78,7 @@ async function testDataFetchTime() {
     console.log('\n ------------------------ \n');
 }
 
-async function populateDB() {
-    await db.resetDB();
 
-    let wines = await jsonSerivce.readDataFromJSON('wines')
-
-    for (const wine of wines) {
-        await wineModel.addWineToDB(wine);
-    }
-
-    console.log('DB populated.')
-}
 
 async function main() {
     const wineFull = await wineModel.getWineFull(897401);
@@ -135,6 +125,9 @@ app.use(express.static(publicPath));
 app.get('/', async (request, response) => {
     response.send(await readFile(path.join(publicPath, 'testing.html'), 'utf8'));
 });
+
+const dbRoutes = require('./routes/db.routes.js');
+app.use(dbRoutes.router);
 
 app.listen(process.env.PORT || 3000, () => {
     console.log("Server running on http://localhost:3000/. To stop the server, press Ctrl + C");
