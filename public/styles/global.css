@@ -1,0 +1,44 @@
+:root {
+    --bg-1: oklch(0.15 0.014 344);
+    --bg-2: oklch(0.19 0.013 342);
+    --bg-3: oklch(0.24 0.012 341);
+    --bg-4: oklch(0.28 0.011 340);
+
+    --border-2: oklch(0.21 0.017 337);
+    --border-3: oklch(0.26 0.016 336);
+    --border-4: oklch(0.30 0.015 335);
+
+    --radius-1: 6px;
+    --radius-2: 4px;
+    --radius-3: 3px;
+
+    --padding-1: 1rem;
+    --padding-2: 0.75rem;
+    --padding-3: 0.5rem;
+    --padding-4: 0.25rem;
+
+    --transition-1: 175ms cubic-bezier(0.65, 0, 0.35, 1);
+    --transition-2: 85ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-1 {
+    grid-area: box-1;
+}
+
+.grid-2 {
+    grid-area: box-2;
+}
+
+.grid-3 {
+    grid-area: box-3;
+}
+
+.grid-4 {
+    grid-area: box-4;
+}
