@@ -196,5 +196,8 @@ async function getWineBasic(vmpId) {
 module.exports = {
     addWineToDB,
     getWineBasic,
-    getWineFull
+    getWineFull,
+    checkIfWineInDB,
+    getPageCount,
+    getPage
 }
