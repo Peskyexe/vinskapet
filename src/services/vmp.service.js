@@ -1,6 +1,6 @@
-const scraper = require('./scraper.service');
-const parser = require('./parser.service');
-const jsonSerivce = require('./scraper.service');
+const scraper = require('./scraper.service.js');
+const parser = require('./parser.service.js');
+const jsonService = require('./json.service.js');
 
 async function openWinePage(vmpId) {
     const wineUrl = `https://www.vinmonopolet.no/p/${vmpId}`;
@@ -28,7 +28,7 @@ async function getRawWineData(vmpId) {
     return data;
 }
 
-async function getFullWineData(vmpId) {
+async function getWineFull(vmpId) {
     const rawData = await getRawWineData(vmpId)
     if (rawData === 'Rate limited') return rawData;
     return await parser.parseRawWineData(rawData);
