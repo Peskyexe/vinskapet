@@ -23,6 +23,38 @@ async function insertWineProperties(wineId, properties) {
     }
 }
 
+async function getWineProperties(wineId) {
+    try {
+        const wineQuery = `
+            SELECT wp.property_id, wp.name
+            FROM wine_properties AS wp
+            WHERE wine_id = $1
+        `;
+        const wineRes = await db.query(wineQuery, [wineId]);
+
+        const generalQuery = `
+            SELECT p.name
+            FROM properties AS p
+            WHERE property_id = $1
+            LIMIT 1
+        `;
+
+        const properties = [];
+        for (const wineProperty of wineRes.rows) {
+            const propertyRes = await db.query(generalQuery, [wineProperty.property_id]);
+            const property = propertyRes.rows[0];
+            properties.push({
+                name: property.name,
+                percentage: wineProperty.percentage
+            });
+        };
+        return properties;
+    } catch (err) {
+        console.error('Error getting wine properties,', err.stack);
+    }
+}
+
 module.exports = {
-    insertWineProperties
+    insertWineProperties,
+    getWineProperties
 }
