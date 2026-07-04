@@ -193,6 +193,57 @@ async function getWineBasic(vmpId) {
     }
 }
 
+
+const winesPerPage = 24
+
+async function getPageCount() {
+    try {
+        const countQuery = `
+            SELECT COUNT(*) FROM wines
+        `;
+        const countRes = await db.query(countQuery, []);
+        return Math.ceil(countRes.rowCount / 24);
+    } catch (err) {
+        console.error('Error getting page count,', err.stack);
+    }
+}
+
+async function getPage(pageNumber) {
+    try {
+        const offset = winesPerPage * (pageNumber - 1);
+
+        const pageQuery = `
+            SELECT w.wine_id, w.vmp_id, w.name, w.price_kr, w.wine_type, p.name AS producer, w.region_id
+            FROM wines AS w
+            JOIN producers AS p ON w.producer_id = p.producer_id
+            ORDER BY w.name
+            LIMIT $1
+            OFFSET $2;
+        `;
+        const pageRes = await db.query(pageQuery, [winesPerPage, offset]);
+
+        const page = [];
+        for (const wine of pageRes.rows) {
+            const fullRegion = await regionsModel.getFullRegionPath(wine.region_id);
+            page.push({
+                wineId: wine.wine_id,
+                vmpId: wine.vmp_id,
+                name: wine.name,
+                type: wine.wine_type,
+                fullRegion,
+                producer: wine.producer,
+                price: parseFloat(wine.price_kr),
+                imagePath: wine.image_path
+            });
+        }
+
+        return page;
+    } catch (err) {
+        console.error('Error getting page,', err.stack)
+    }
+}
+
+
 module.exports = {
     addWineToDB,
     getWineBasic,
