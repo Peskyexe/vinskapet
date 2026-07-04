@@ -76,6 +76,7 @@ async function addWineToDB(wineData) {
     
 }
 
+
 // --- WINE FULL ---
 // Wine Id
 // Vmp Id
@@ -89,6 +90,7 @@ async function addWineToDB(wineData) {
 // Contents
 // Grapes
 // Foodtypes
+// Properties
 
 // Vintage year
 // Aroma text
@@ -123,14 +125,15 @@ async function getWineFull(vmpId) {
         if (wineRes.rows.length === 0) return null;
         const wine = wineRes.rows[0];
 
-        const [fullRegion, contents, grapes, foodtypes, wineDescriptions, aromas, tastes] = await Promise.all([
+        const [fullRegion, contents, grapes, foodtypes, wineDescriptions, aromas, tastes, properties] = await Promise.all([
             regionsModel.getFullRegionPath(wine.region_id),
             contentsModel.getWineContents(wine.wine_id),
             grapesModel.getWineGrapes(wine.wine_id),
             foodtypesModel.getWineFoodtypes(wine.wine_id),
             wineDescriptionsModel.getWineDescriptions(wine.wine_id),
             aromasModel.getWineAromas(wine.wine_id),
-            tastesModel.getWineTastes(wine.wine_id)
+            tastesModel.getWineTastes(wine.wine_id),
+            propertiesModel.getWineProperties(wine.wine_id)
         ]);
 
         return {
@@ -144,6 +147,7 @@ async function getWineFull(vmpId) {
             contents,
             grapes,
             foodtypes,
+            properties,
             vintageYear: wine.vintage_year,
             aromaText: wineDescriptions.aromaText,
             aromas,
@@ -156,6 +160,7 @@ async function getWineFull(vmpId) {
         console.error('Error getting full wine data:', err.stack);
     }
 }
+
 
 async function getWineBasic(vmpId) {
     try {
