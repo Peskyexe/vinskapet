@@ -250,6 +250,5 @@ module.exports = {
     openPage,
     disableJS,
     enableJS,
-    readSelectorsArray,
-    getWineIdsFromSearchURL
+    readSelectorsArray
 }
