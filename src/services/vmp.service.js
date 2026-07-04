@@ -47,5 +47,6 @@ async function getWineIdsFromSearchURL(searchUrl) {
 }
 
 module.exports = {
-    getFullWineData
+    getWineFull,
+    getWineIdsFromSearchURL
 }
