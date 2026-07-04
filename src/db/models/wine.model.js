@@ -9,8 +9,27 @@ const contentsModel = require('./contents.model.js');
 const tastesModel = require('./tastes.model.js');
 const aromasModel = require('./aromas.model.js');
 
+
+async function checkIfWineInDB(vmpId) {
+    try {
+        const checkQuery = `
+            SELECT w.vmp_id
+            FROM wines AS w
+            WHERE vmp_id = $1
+            LIMIT 1
+        `;
+        const checkRes = await db.query(checkQuery, wineData.vmp_id);
+        if (checkRes.rows.length > 0) return true;
+        else return false;        
+    } catch (err) {
+        console.error('Error checking if wine is in DB,', err.stack);
+    }
+}
+
 async function addWineToDB(wineData) {
     try {
+        if (await checkIfWineInDB(wineData.vmp_id)) return;
+
         // General data tables
         const [wineTypeId, producerId, regionId, colorId, purchaseCategoryId] = await Promise.all([
             utilitiesModel.getRowIdFromKey('wine_types', 'name', wineData.wine_type, 'wine_type_id'),
