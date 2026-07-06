@@ -167,8 +167,9 @@ async function getWineFull(vmpId) {
 async function getWineBasic(vmpId) {
     try {
         const wineQuery = `
-            SELECT w.wine_id, w.vmp_id, w.name, w.price_kr, w.wine_type, p.name AS producer, w.region_id
+            SELECT w.wine_id, w.vmp_id, w.name, w.price_kr, wt.name AS wine_type p.name AS producer, w.region_id, w.image_path
             FROM wines AS w
+            JOIN wine_types AS wt ON w.wine_type_id = wt.wine_type_id
             JOIN producers AS p ON w.producer_id = p.producer_id
             WHERE w.vmp_id = $1
         `;
