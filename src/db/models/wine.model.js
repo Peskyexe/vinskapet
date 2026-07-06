@@ -18,7 +18,7 @@ async function checkIfWineInDB(vmpId) {
             WHERE vmp_id = $1
             LIMIT 1
         `;
-        const checkRes = await db.query(checkQuery, wineData.vmp_id);
+        const checkRes = await db.query(checkQuery, vmpId);
         if (checkRes.rows.length > 0) return true;
         else return false;        
     } catch (err) {
