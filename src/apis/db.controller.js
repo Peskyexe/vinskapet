@@ -18,7 +18,7 @@ async function populateDB() {
 exports.populateDB = async (request, response) => {
     try {
         await populateDB();
-        response.status(200).json();
+        response.status(200);
     } catch (error) {
         response.status(500).json({ error: error.message });
     }    
