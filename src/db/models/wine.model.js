@@ -30,50 +30,54 @@ async function addWineToDB(wineData) {
     try {
         if (await checkIfWineInDB(wineData.vmp_id)) return;
 
-        // General data tables
-        const [wineTypeId, producerId, regionId, colorId, purchaseCategoryId] = await Promise.all([
-            utilitiesModel.getRowIdFromKey('wine_types', 'name', wineData.wine_type, 'wine_type_id'),
-            utilitiesModel.getRowIdFromKey('producers', 'name', wineData.producer_name, 'producer_id'),
-            regionsModel.insertRegionArray(wineData.region_array),
-            utilitiesModel.getRowIdFromKey('colors', 'name', wineData.color_name, 'color_id'),
-            utilitiesModel.getRowIdFromKey('purchase_categories', 'name', wineData.purchase_category_name, 'purchase_category_id'),
-        ]);
+        // Everything below runs on one transaction client so a failure partway through
+        // (e.g. a bad grape/content row) rolls back the whole wine instead of leaving it half-inserted.
+        await db.withTransaction(async (client) => {
+            // General data tables
+            const [wineTypeId, producerId, regionId, colorId, purchaseCategoryId] = await Promise.all([
+                utilitiesModel.getRowIdFromKey(client, 'wine_types', 'name', wineData.wine_type, 'wine_type_id'),
+                utilitiesModel.getRowIdFromKey(client, 'producers', 'name', wineData.producer_name, 'producer_id'),
+                regionsModel.insertRegionArray(client, wineData.region_array),
+                utilitiesModel.getRowIdFromKey(client, 'colors', 'name', wineData.color_name, 'color_id'),
+                utilitiesModel.getRowIdFromKey(client, 'purchase_categories', 'name', wineData.purchase_category_name, 'purchase_category_id'),
+            ]);
 
-        const insertQuery = `
-            INSERT INTO wines(vmp_id, name, vintage_year, wine_type_id, producer_id, region_id, color_id, volume_cl, price_kr, purchase_category_id)
-            VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
-            RETURNING wine_id
-        `;
-        const insertRes = await db.query(insertQuery, [
-            wineData.vmp_id,
-            wineData.name,
-            wineData.vintage_year,
-            wineTypeId,
-            producerId,
-            regionId,
-            colorId,
-            wineData.volume_cl,
-            wineData.price_kr,
-            purchaseCategoryId
-        ]);
+            const insertQuery = `
+                INSERT INTO wines(vmp_id, name, vintage_year, wine_type_id, producer_id, region_id, color_id, volume_cl, price_kr, purchase_category_id)
+                VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
+                RETURNING wine_id
+            `;
+            const insertRes = await client.query(insertQuery, [
+                wineData.vmp_id,
+                wineData.name,
+                wineData.vintage_year,
+                wineTypeId,
+                producerId,
+                regionId,
+                colorId,
+                wineData.volume_cl,
+                wineData.price_kr,
+                purchaseCategoryId
+            ]);
 
-        const wineId = insertRes.rows[0].wine_id;
+            const wineId = insertRes.rows[0].wine_id;
 
-        // Junction tables
-        await Promise.all([
-            wineDescriptionsModel.insertWineDescriptions(wineId, wineData.wine_descriptions_object.aroma_text, wineData.wine_descriptions_object.taste_text),
-            foodtypesModel.insertWineFoodtypes(wineId, wineData.wine_foodtypes_array),
-            propertiesModel.insertWineProperties(wineId, wineData.wine_properties_array),
-            grapesModel.insertWineGrapes(wineId, wineData.wine_grapes_array),
-            contentsModel.insertWineContents(wineId, wineData.wine_contents_array),
-            tastesModel.insertWineTastes(wineId, wineData.wine_tastes_array),
-            aromasModel.insertWineAromas(wineId, wineData.wine_aromas_array)
-        ]);
+            // Junction tables
+            await Promise.all([
+                wineDescriptionsModel.insertWineDescriptions(client, wineId, wineData.wine_descriptions_object.aroma_text, wineData.wine_descriptions_object.taste_text),
+                foodtypesModel.insertWineFoodtypes(client, wineId, wineData.wine_foodtypes_array),
+                propertiesModel.insertWineProperties(client, wineId, wineData.wine_properties_array),
+                grapesModel.insertWineGrapes(client, wineId, wineData.wine_grapes_array),
+                contentsModel.insertWineContents(client, wineId, wineData.wine_contents_array),
+                tastesModel.insertWineTastes(client, wineId, wineData.wine_tastes_array),
+                aromasModel.insertWineAromas(client, wineId, wineData.wine_aromas_array)
+            ]);
+        });
 
     } catch (err) {
         console.error('Error adding wine to DB:', err.stack)
     }
-    
+
 }
 
 
