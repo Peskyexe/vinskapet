@@ -1,35 +1,36 @@
 const db = require('../db.js');
 
-async function getRowIdFromKey(table, keyName, keyValue, idKeyName) {
+// `client` is the pg Client/PoolClient for the transaction these inserts run inside.
+async function getRowIdFromKey(client, table, keyName, keyValue, idKeyName) {
     const findQuery = `SELECT ${idKeyName} FROM ${table} WHERE ${keyName} = $1 LIMIT 1`;
     const findValues = [keyValue];
 
-    const findRes = await db.query(findQuery, findValues);
+    const findRes = await client.query(findQuery, findValues);
     if (findRes.rows.length > 0) return findRes.rows[0][idKeyName];
 
     const insertQuery = `INSERT INTO ${table}(${keyName}) VALUES($1) RETURNING ${idKeyName}`;
     const insertValues = [keyValue];
 
-    const insertRes = await db.query(insertQuery, insertValues);
+    const insertRes = await client.query(insertQuery, insertValues);
     return insertRes.rows[0][idKeyName];
 }
 
-async function getRowIdsFromKey(table, keyName, keyValues, idKeyName) {
+async function getRowIdsFromKey(client, table, keyName, keyValues, idKeyName) {
     const rowIds = [];
     for (const keyValue of keyValues) {
-        rowIds.push(await getRowIdFromKey(table, keyName, keyValue, idKeyName));
+        rowIds.push(await getRowIdFromKey(client, table, keyName, keyValue, idKeyName));
     }
     return rowIds;
 }
 
-async function insertSimpleJunctionTable(baseTableName, baseKeyName, baseKeyValues, baseIdKeyName, wineId, junctionTableName) {
-    const baseIds = await getRowIdsFromKey(baseTableName, baseKeyName, baseKeyValues, baseIdKeyName);
+async function insertSimpleJunctionTable(client, baseTableName, baseKeyName, baseKeyValues, baseIdKeyName, wineId, junctionTableName) {
+    const baseIds = await getRowIdsFromKey(client, baseTableName, baseKeyName, baseKeyValues, baseIdKeyName);
 
     const insertQuery = `INSERT INTO ${junctionTableName} (${baseIdKeyName}, wine_id) VALUES ($1, $2)`;
 
     for (const baseId of baseIds) {
         const insertValues = [baseId, wineId];
-        await db.query(insertQuery, insertValues);
+        await client.query(insertQuery, insertValues);
     }
 }
 

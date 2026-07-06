@@ -1,11 +1,8 @@
 const utilitiesModel = require('./utilities.model.js');
 
-async function insertWineTastes(wineId, tastes) {
-    try {
-        await utilitiesModel.insertSimpleJunctionTable('tastes', 'name', tastes, 'taste_id', wineId, 'wine_tastes');
-    } catch (err) {
-        console.error('Error inserting wine tastes,', err.stack);
-    }
+// Not caught here: a failed insert must propagate so the enclosing transaction rolls back.
+async function insertWineTastes(client, wineId, tastes) {
+    await utilitiesModel.insertSimpleJunctionTable(client, 'tastes', 'name', tastes, 'taste_id', wineId, 'wine_tastes');
 }
 
 async function getWineTastes(wineId) {
