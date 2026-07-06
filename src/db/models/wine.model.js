@@ -99,6 +99,7 @@ async function addWineToDB(wineData) {
 // Tastes
 // Color
 // Purchase category
+// Image Path
 
 // DN score
 // Drinking window
@@ -112,7 +113,7 @@ async function addWineToDB(wineData) {
 async function getWineFull(vmpId) {
     try {
         const wineQuery = `
-            SELECT w.wine_id, w.vmp_id, wt.name AS type, w.name, w.region_id, p.name AS producer, w.price_kr, w.vintage_year, c.name AS color, pc.name AS purchase_category
+            SELECT w.wine_id, w.vmp_id, wt.name AS type, w.name, w.region_id, p.name AS producer, w.price_kr, w.vintage_year, c.name AS color, pc.name AS purchase_category, w.image_path
             FROM wines AS w
             JOIN wine_types AS wt ON w.wine_type_id = wt.wine_type_id
             JOIN producers AS p ON w.producer_id = p.producer_id
@@ -154,7 +155,8 @@ async function getWineFull(vmpId) {
             tasteText: wineDescriptions.tasteText,
             tastes,
             color: wine.color,
-            purchaseCategory: wine.purchase_category
+            purchaseCategory: wine.purchase_category,
+            imagePath: wine.image_path
         }
     } catch (err) {
         console.error('Error getting full wine data:', err.stack);
