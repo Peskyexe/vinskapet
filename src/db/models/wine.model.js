@@ -205,7 +205,7 @@ async function getPageCount() {
             SELECT COUNT(*) FROM wines
         `;
         const countRes = await db.query(countQuery, []);
-        return Math.ceil(countRes.rowCount / 24);
+        return Math.ceil(parseInt(countRes.rows[0].count) / 24);
     } catch (err) {
         console.error('Error getting page count,', err.stack);
     }
