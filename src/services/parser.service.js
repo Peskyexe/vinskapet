@@ -77,7 +77,7 @@ function parseVolume(rawVolumeString) {
 // Raw string example: "Kr 998,00"
 function parsePrice(rawPriceString) {
     const matches = rawPriceString.match(/[^a-z][ \d,]+/g);
-    return matches ? parseFloat(matches[0].trim().replace(',', '.')) : null;
+    return matches ? parseFloat(matches[0].trim().replace(',', '.').replace(' ', '')) : null;
 }
 
 // Extracts and creates an array of objects that contain information about the properties of a wine. e.g. how sweet or fulfilling the wine is.
