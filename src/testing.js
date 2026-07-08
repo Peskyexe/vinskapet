@@ -82,24 +82,26 @@ async function testDataFetchTime() {
 }
 
 async function main() {
-    const wineFullDB = await wineModel.getWineFull(897401);
-    console.log('Database version:');
-    console.log(wineFullDB)
 
-    const wineFullVmp = await vmpService.getWineFull(897401);
-    console.log('\nScraper version:')
-    console.log(wineFullVmp)
 }
 
 async function getWinesVmp() {
-    createWineDataArray(await jsonSerivce.readDataFromJSON('wine-ids')).catch(console.error);
+    const result = await createWineDataArray(await jsonSerivce.readDataFromJSON('wine-ids')).catch(console.error);
+    if (result === 'Rate limited') console.log('Rate limited by Vinmonopolet, qutting early and saving progress.');
+}
+
+async function testFetchSingle() {
+    const wine = await wineService.getWineFull('7897507')
+    console.log(wine);
 }
 
 const functionName = process.argv[2];
 if (functionName === "main") {
     main().catch(console.error);
-} else if (functionName === "populate-db") {
-    populateDB().catch(console.error);
+} else if (functionName === "reset-db") {
+    db.resetDB().catch(console.error);
 } else if (functionName === "get-wines-vmp") {
     getWinesVmp();
+} else if (functionName === "test-fetch-single") {
+    testFetchSingle()
 }
