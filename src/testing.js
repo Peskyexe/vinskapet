@@ -1,5 +1,6 @@
 const jsonSerivce = require('./services/json.service.js');
 const vmpService = require('./services/vmp.service.js');
+const wineService = require('./services/wine.service.js');
 const wineModel = require('./db/models/wine.model.js');
 const db = require('./db/db.js');
 
