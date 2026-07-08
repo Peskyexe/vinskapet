@@ -215,7 +215,7 @@ async function parseRawWineData(rawData) {
             wineData.image_path_full = rawData.image.value.full;
         }
 
-        return wineData;        
+        return wineData;
     } catch (err) {
         await jsonSerivce.saveDataAsJSON(rawData, 'wine-error-data');
 

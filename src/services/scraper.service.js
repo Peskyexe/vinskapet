@@ -4,7 +4,6 @@ const fs = require('fs/promises');
 const paths = require('../config/paths.js');
 const path = require('path');
 
-
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 puppeteer.use(StealthPlugin());
 
@@ -12,20 +11,7 @@ let browser;
 let page;
 let browserLaunched = false;
 
-
-function calculateExecutionTime(startTime, endTime) {
-    const executionTime = Math.round(endTime - startTime);
-    return executionTime;
-}
-
-function logExecution(baseString, startTime) {
-    console.log(baseString + ', took:', calculateExecutionTime(startTime, performance.now()), 'ms');
-}
-
-
 async function launchBrowser() {
-    const startTime = performance.now();
-
     browser = await puppeteer.launch({
         headless: true,
         args: [
@@ -68,26 +54,23 @@ async function launchBrowser() {
 
     if (browserLaunched === false) browserLaunched = true;
 
-    logExecution('Browser launched', startTime);
+    console.log('Headless browser launched.');
 }
 
 function closeBrowser() {
     browser.close()
     if (browserLaunched === true) browserLaunched = false;
-    console.log('Browser Closed.')
+    console.log('Headless browser closed.');
 }
 
 let currentUrl = '';
 async function openPage(url) {
     if (browserLaunched === false) await launchBrowser();
-
-    const startTime = performance.now();
-
     currentUrl = url;
     await page.goto(url, { waitUntil: 'domcontentloaded' });
     try { await page.click('.MqTnNSaV.SstETDah .btn-secondary', { timeout: 1000 }); } catch(e) {}
 
-    logExecution('Page opened', startTime);
+    console.log('Page opened,', url);
 }
 
 async function disableJS() {
@@ -102,14 +85,12 @@ const selectorArgs = { visible: true, timeout: 5000 }
 
 async function readSelectorText(selector) {
     await page.waitForSelector(selector, selectorArgs)
-    const text = await page.$eval(selector, el => el.textContent.trim())
-    return text
+    return await page.$eval(selector, el => el.textContent.trim())
 }
 
 async function readSelectorAttr(selector, attr) {
     await page.waitForSelector(selector, selectorArgs)
-    const text = await page.$eval(selector, el => el.getAttribute(attr))
-    return text
+    return await page.$eval(selector, el => el.getAttribute(attr))
 }
 
 // Maps the image size we want to the width descriptor Vinmonopolet uses in its srcset.
@@ -192,14 +173,12 @@ async function readSelectorImage(selector) {
 
 async function readSelectorTextAll(selector) {
     await page.waitForSelector(selector, selectorArgs)
-    const texts = await page.$$eval(selector, els => els.map(el => el.textContent.trim()))
-    return texts
+    return await page.$$eval(selector, els => els.map(el => el.textContent.trim()))
 }
 
 async function readSelectorAttrsAll(selector, attr) {
     await page.waitForSelector(selector, selectorArgs)
-    const attrs = await page.$$eval(selector, (els, a) => els.map(el => el.getAttribute(a)), attr)
-    return attrs
+    return await page.$$eval(selector, (els, a) => els.map(el => el.getAttribute(a)), attr)
 }
 
 
@@ -226,7 +205,7 @@ function splitDoubledString(input) {
         value: result[1].trim()
     }
 
-    return [labeledResult, result];
+    return [ labeledResult, result ];
 }
 
 // Does the same as the function above, just takes in an array and returns an array.
@@ -295,28 +274,22 @@ async function readSelector(selector) {
             const { rate_limited_check: selector } = await jsonService.readDataFromJSON('scraper-selectors');
             const rateLimited = await readSelectorText(selector.selector)
             
-            console.error('Being rate limited, canceling all scraping')
+            const currentTime = new Date();
+            console.error('Rate limiting detected by scraper.', currentTime)
             if (rateLimited) return 'Rate limited';
         } catch (err) {
             console.error('Rate limit check failed,', err.stack)
         }
 
-        const errors = await jsonService.readDataFromJSON('errors');
-        errors.push({desc: 'Page reading error', url: currentUrl, error: err, error_stack: err.stack, selector: selector});
-        await jsonService.saveDataAsJSON(errors, 'errors');
-
-        console.error(`Error reading selector '${selector.name}',`, err.stack)
+        console.error(`Failed to read selector '${selector.name}'.`, err.stack)
     }
-
     return { value: value, type: selector.type, multi: !!selector.multi, doubled: !!selector.doubled }
 }
 
 
 async function readSelectorsArray(selectors) {
-    const startTime = performance.now()
-
     const data = {}
-    data['url'] = currentUrl;
+    data['read-from'] = currentUrl;
 
     for (const selector of selectors) {
         const result = await readSelector(selector);
@@ -325,8 +298,6 @@ async function readSelectorsArray(selectors) {
 
         data[selector.name] = result;
     }
-
-    logExecution('Page read', startTime)
 
     return data;
 }
