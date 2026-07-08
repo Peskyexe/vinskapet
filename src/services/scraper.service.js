@@ -1,5 +1,9 @@
 const puppeteer = require('puppeteer-extra');
 const jsonService = require('./json.service.js');
+const fs = require('fs/promises');
+const paths = require('../config/paths.js');
+const path = require('path');
+
 
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 puppeteer.use(StealthPlugin());
@@ -108,6 +112,83 @@ async function readSelectorAttr(selector, attr) {
     return text
 }
 
+// Maps the image size we want to the width descriptor Vinmonopolet uses in its srcset.
+const imageSizes = { basic: '300w', full: '900w' };
+
+const extensionsByContentType = {
+    'image/jpeg': '.jpg',
+    'image/png': '.png',
+    'image/webp': '.webp',
+    'image/gif': '.gif'
+};
+
+// Turns a srcset string like "a.jpg 300w, b.jpg 900w" into [{ url: 'a.jpg', width: '300w' }, ...]
+function parseSrcset(srcset) {
+    return srcset.split(',').map(entry => {
+        const [url, width] = entry.trim().split(/\s+/);
+        return { url, width };
+    });
+}
+
+function extractVmpIdFromUrl(url) {
+    const match = url.match(/\/p\/(\d+)/);
+    return match ? match[1] : null;
+}
+
+async function downloadImage(url, attempts = 2) {
+    for (let attempt = 1; attempt <= attempts; attempt++) {
+        try {
+            const response = await fetch(url);
+            const contentType = response.headers.get('content-type') || '';
+
+            if (!response.ok || !contentType.startsWith('image/')) {
+                throw new Error(`Bad image response (status ${response.status}, content-type ${contentType})`);
+            }
+
+            const buffer = Buffer.from(await response.arrayBuffer());
+            const extension = extensionsByContentType[contentType] || path.extname(new URL(url).pathname) || '.jpg';
+
+            return { buffer, extension };
+        } catch (err) {
+            if (attempt === attempts) throw err;
+        }
+    }
+}
+
+// Downloads the basic/full sized images referenced by an <img srcset> and saves them to disk as
+// {wineImagesPath}/{vmpId}/{basic|full}{ext}. Returns the URL paths to store on the wine record.
+async function readSelectorImage(selector) {
+    await page.waitForSelector(selector, selectorArgs)
+    const srcset = await page.$eval(selector, el => el.getAttribute('srcset'))
+
+    const vmpId = extractVmpIdFromUrl(currentUrl);
+    if (!vmpId) throw new Error(`Could not extract vmp_id from url '${currentUrl}'`);
+
+    const entries = parseSrcset(srcset);
+    const sizeNames = Object.keys(imageSizes);
+
+    const downloads = await Promise.all(sizeNames.map(async (sizeName) => {
+        const widthToken = imageSizes[sizeName];
+        const entry = entries.find(e => e.width === widthToken);
+        if (!entry) throw new Error(`No srcset entry found for width '${widthToken}'`);
+
+        const { buffer, extension } = await downloadImage(entry.url);
+        return { sizeName, buffer, extension };
+    }));
+
+    const wineImageDir = path.join(paths.wineImagesPath, vmpId);
+    await fs.mkdir(wineImageDir, { recursive: true });
+
+    const imagePaths = {};
+    for (const { sizeName, buffer, extension } of downloads) {
+        const fileName = `${sizeName}${extension}`;
+        await fs.writeFile(path.join(wineImageDir, fileName), buffer);
+        imagePaths[sizeName] = `${paths.wineImagesUrlPrefix}/${vmpId}/${fileName}`;
+    }
+
+    return imagePaths;
+}
+
 
 async function readSelectorTextAll(selector) {
     await page.waitForSelector(selector, selectorArgs)
@@ -197,6 +278,8 @@ async function readSelector(selector) {
         else if (selector.multi == null) {
             if (selector.type === 'text') {
                 value = await readSelectorText(selector.selector)
+            } else if (selector.type === 'image') {
+                value = await readSelectorImage(selector.selector)
             } else if (selector.type != null) {
                 value = await readSelectorAttr(selector.selector, selector.type)
             }
