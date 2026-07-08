@@ -18,17 +18,17 @@ async function populateDB() {
 exports.populateDB = async (request, response) => {
     try {
         await populateDB();
-        response.status(200);
+        response.status(200).end();
     } catch (error) {
         response.status(500).json({ error: error.message });
-    }    
+    }
 }
 
 exports.resetDB = async (request, response) => {
     try {
         await db.resetDB();
-        response.status(200);
+        response.status(200).end();
     } catch (error) {
         response.status(500).json({ error: error.message });
-    }    
+    }
 }
