@@ -6,3 +6,6 @@ node_modules/
 
 # Testing / dev stuff
 wine-fetch-times.txt
+
+# Scraped wine images
+storage/
