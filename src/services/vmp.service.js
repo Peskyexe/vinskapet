@@ -17,7 +17,7 @@ async function getRawWineData(vmpId) {
     const data = await scraper.readSelectorsArray(selectors);
 
     // Error handling incase no wine properties where found. Can happen if a wine doesn't have any foodtypes.
-    if (!data.properties.value[0]) {
+    if ( data !== 'Rate limited' && !data.properties.value[0]) {
         delete data.foodtypes;
         const { vmp_wine_data_properties_backup: propertiesSelector } = await jsonService.readDataFromJSON('scraper-selectors');
         data.properties = await scraper.readSelector(propertiesSelector)
@@ -30,7 +30,7 @@ async function getRawWineData(vmpId) {
 
 async function getWineFull(vmpId) {
     const rawData = await getRawWineData(vmpId)
-    if (rawData === 'Rate limited') return rawData;
+    if (rawData === 'Rate limited') return 'Rate limited';
     return await parser.parseRawWineData(rawData);
 }
 

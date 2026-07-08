@@ -24,7 +24,10 @@ async function createWineDataArray(wineIdArray) {
     for (const wineId of wineIdArray) {
         try {
             const data = await vmpService.getWineFull(wineId);
-            if (data === 'Rate limited') return;
+            if (data === 'Rate limited') {
+                await jsonSerivce.saveDataAsJSON(wineDataArray, 'wines-rt-early-quit');
+                return 'Rate limited';
+            }
             wineDataArray.push(data);            
         } catch (err) {
             console.error(err.stack)

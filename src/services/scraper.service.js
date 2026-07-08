@@ -293,7 +293,7 @@ async function readSelector(selector) {
     } catch (err) {
         try {
             const { rate_limited_check: selector } = await jsonService.readDataFromJSON('scraper-selectors');
-            const rateLimited = await readSelectorText(selector)
+            const rateLimited = await readSelectorText(selector.selector)
             
             console.error('Being rate limited, canceling all scraping')
             if (rateLimited) return 'Rate limited';
@@ -319,7 +319,11 @@ async function readSelectorsArray(selectors) {
     data['url'] = currentUrl;
 
     for (const selector of selectors) {
-        data[selector.name] = await readSelector(selector);
+        const result = await readSelector(selector);
+
+        if (result === 'Rate limited') return 'Rate limited';
+
+        data[selector.name] = result;
     }
 
     logExecution('Page read', startTime)
