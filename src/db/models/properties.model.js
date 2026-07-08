@@ -26,7 +26,7 @@ async function insertWineProperties(client, wineId, properties) {
 async function getWineProperties(wineId) {
     try {
         const wineQuery = `
-            SELECT wp.property_id, wp.name
+            SELECT wp.property_id, wp.value
             FROM wine_properties AS wp
             WHERE wine_id = $1
         `;
@@ -45,7 +45,7 @@ async function getWineProperties(wineId) {
             const property = propertyRes.rows[0];
             properties.push({
                 name: property.name,
-                percentage: wineProperty.percentage
+                value: wineProperty.value
             });
         };
         return properties;
