@@ -337,5 +337,6 @@ module.exports = {
     openPage,
     disableJS,
     enableJS,
-    readSelectorsArray
+    readSelectorsArray,
+    readSelector
 }
