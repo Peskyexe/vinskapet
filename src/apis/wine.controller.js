@@ -4,7 +4,7 @@ const { request, response } = require('express');
 exports.getWineFull = async (request, response) => {
     try {
         const wineFull = await wineService.getWineFull(request.params.vmpId);
-        response.status(200).json({ wineFull });
+        response.status(200).json(wineFull);
     } catch (err) {
         response.status(500).json({ error: err.message});
     }
@@ -13,7 +13,7 @@ exports.getWineFull = async (request, response) => {
 exports.getWineBasic = async (request, response) => {
     try {
         const wineBasic = await wineService.getWineBasic(request.params.vmpId);
-        response.status(200).json({ wineBasic });
+        response.status(200).json(wineBasic);
     } catch (err) {
         response.status(500).json({ error: err.message});
     }
@@ -22,7 +22,7 @@ exports.getWineBasic = async (request, response) => {
 exports.getPageCount = async (request, response) => {
     try {
         const pageCount = await wineService.getPageCount();
-        response.status(200).json({ pageCount });
+        response.status(200).json(pageCount);
     } catch (err) {
         response.status(500).json({ error: err.message});
     }
@@ -31,7 +31,7 @@ exports.getPageCount = async (request, response) => {
 exports.getPage = async (request, response) => {
     try {
         const page = await wineService.getPage(request.params.pageNumber);
-        response.status(200).json({ page });
+        response.status(200).json(page);
     } catch (err) {
         response.status(500).json({ error: err.message});
     }
