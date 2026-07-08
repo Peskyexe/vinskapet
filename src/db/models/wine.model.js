@@ -43,8 +43,8 @@ async function addWineToDB(wineData) {
             ]);
 
             const insertQuery = `
-                INSERT INTO wines(vmp_id, name, vintage_year, wine_type_id, producer_id, region_id, color_id, volume_cl, price_kr, purchase_category_id)
-                VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
+                INSERT INTO wines(vmp_id, name, vintage_year, wine_type_id, producer_id, region_id, color_id, volume_cl, price_kr, purchase_category_id, image_path_basic, image_path_full)
+                VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)
                 RETURNING wine_id
             `;
             const insertRes = await client.query(insertQuery, [
@@ -57,7 +57,9 @@ async function addWineToDB(wineData) {
                 colorId,
                 wineData.volume_cl,
                 wineData.price_kr,
-                purchaseCategoryId
+                purchaseCategoryId,
+                wineData.image_path_basic,
+                wineData.image_path_full
             ]);
 
             const wineId = insertRes.rows[0].wine_id;
@@ -117,7 +119,7 @@ async function addWineToDB(wineData) {
 async function getWineFull(vmpId) {
     try {
         const wineQuery = `
-            SELECT w.wine_id, w.vmp_id, wt.name AS type, w.name, w.region_id, p.name AS producer, w.price_kr, w.vintage_year, c.name AS color, pc.name AS purchase_category, w.image_path
+            SELECT w.wine_id, w.vmp_id, wt.name AS type, w.name, w.region_id, p.name AS producer, w.price_kr, w.vintage_year, c.name AS color, pc.name AS purchase_category, w.image_path_basic, w.image_path_full
             FROM wines AS w
             JOIN wine_types AS wt ON w.wine_type_id = wt.wine_type_id
             JOIN producers AS p ON w.producer_id = p.producer_id
@@ -160,7 +162,8 @@ async function getWineFull(vmpId) {
             tastes,
             color: wine.color,
             purchaseCategory: wine.purchase_category,
-            imagePath: wine.image_path
+            imagePathBasic: wine.image_path_basic,
+            imagePathFull: wine.image_path_full
         }
     } catch (err) {
         console.error('Error getting full wine data:', err.stack);
@@ -171,7 +174,7 @@ async function getWineFull(vmpId) {
 async function getWineBasic(vmpId) {
     try {
         const wineQuery = `
-            SELECT w.wine_id, w.vmp_id, w.name, w.price_kr, wt.name AS wine_type p.name AS producer, w.region_id, w.image_path
+            SELECT w.wine_id, w.vmp_id, w.name, w.price_kr, wt.name AS wine_type, p.name AS producer, w.region_id, w.image_path_basic
             FROM wines AS w
             JOIN wine_types AS wt ON w.wine_type_id = wt.wine_type_id
             JOIN producers AS p ON w.producer_id = p.producer_id
@@ -193,7 +196,7 @@ async function getWineBasic(vmpId) {
             fullRegion,
             producer: wine.producer,
             price: parseFloat(wine.price_kr),
-            imagePath: wine.image_path
+            imagePath: wine.image_path_basic
         };
     } catch (err) {
         console.error('Error getting basic wine data:', err.stack);
@@ -220,8 +223,9 @@ async function getPage(pageNumber) {
         const offset = winesPerPage * (pageNumber - 1);
 
         const pageQuery = `
-            SELECT w.wine_id, w.vmp_id, w.name, w.price_kr, w.wine_type, p.name AS producer, w.region_id
+            SELECT w.wine_id, w.vmp_id, w.name, w.price_kr, wt.name AS wine_type, p.name AS producer, w.region_id, w.image_path_basic
             FROM wines AS w
+            JOIN wine_types AS wt ON w.wine_type_id = wt.wine_type_id
             JOIN producers AS p ON w.producer_id = p.producer_id
             ORDER BY w.name
             LIMIT $1
@@ -240,7 +244,7 @@ async function getPage(pageNumber) {
                 fullRegion,
                 producer: wine.producer,
                 price: parseFloat(wine.price_kr),
-                imagePath: wine.image_path
+                imagePath: wine.image_path_basic
             });
         }
 
