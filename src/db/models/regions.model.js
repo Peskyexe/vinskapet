@@ -46,7 +46,7 @@ async function getFullRegionPath(regionId) {
             const parentRes = await db.query(parentQuery, [currentId])
             currentId = parentRes.rows[0].parent_id;
 
-            if (!currentId) return regionArray.toReversed();
+            if (!currentId) return regionArray.toReversed().join(', ');
 
             loopCount++;
         }        
