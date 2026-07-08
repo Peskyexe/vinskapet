@@ -163,7 +163,9 @@ async function parseRawWineData(rawData) {
         wine_grapes_array: [],
         wine_contents_array: [],
         wine_aromas_array: [],
-        wine_tastes_array: []
+        wine_tastes_array: [],
+        image_path_basic: null,
+        image_path_full: null
     };
 
     try {
@@ -207,6 +209,11 @@ async function parseRawWineData(rawData) {
         wineData.wine_aromas_array = parseStringBasedOnKeywords(infoMap['Lukt'], aromaKeywords);
 
         wineData.wine_tastes_array = parseStringBasedOnKeywords(infoMap['Smak'], tasteKeywords);
+
+        if (rawData.image && rawData.image.value) {
+            wineData.image_path_basic = rawData.image.value.basic;
+            wineData.image_path_full = rawData.image.value.full;
+        }
 
         return wineData;        
     } catch (err) {
